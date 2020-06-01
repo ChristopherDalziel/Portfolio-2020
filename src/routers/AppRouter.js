@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Nav from "../components/Nav";
+import NavComponent from "../components/Nav";
 import FooterComponent from "../components/Footer";
 
 import LandingPage from "../components/pages/LandingPage";
@@ -15,7 +15,7 @@ import NotFoundPage from "../components/pages/NotFoundPage";
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      <Nav />
+      {/* <NavComponent /> */}
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route path="/about" component={AboutPage} />
@@ -24,7 +24,7 @@ const AppRouter = () => {
         <Route path="/codepen" component={CodepenPage} />
         <Route component={NotFoundPage} />
       </Switch>
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </BrowserRouter>
   );
 };
