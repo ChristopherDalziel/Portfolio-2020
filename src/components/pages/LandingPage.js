@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import backgroundImage from "../../assets/Web_Final_Col.jpg";
-import NavComponent from "../Nav";
-import FooterComponent from "../Footer";
+import mobileBackgroundImage from "../../assets/Web_Final_Col_Mob.jpg";
 import { keyframes } from "@emotion/core";
 
 const fadeInAnimation = keyframes`
@@ -22,6 +21,10 @@ const LandingPageContainer = styled.main`
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 815px) {
+    background-image: url(${mobileBackgroundImage});
+    background-size: auto 80vh;
+    background-repeat: no-repeat;
 `;
 
 const HeroTextContainer = styled.div`
@@ -39,21 +42,24 @@ const HeroTextContainer = styled.div`
 const Heading = styled.h1`
   margin-top: 30%;
   font-size: 6em;
+  @media (max-width: 815px) {
+    margin-top: 60vh;
+    font-size: 60px;
 `;
 
 const SubHeading = styled.h2`
   font-size: 3em;
+  @media (max-width: 815px) {
+    font-size: 25px;
 `;
 
 function LandingPage() {
   return (
     <LandingPageContainer>
-      {/* <NavComponent /> */}
       <HeroTextContainer>
         <Heading>HELLO.</Heading>
         <SubHeading>my name's Chris.</SubHeading>
       </HeroTextContainer>
-      {/* <FooterComponent /> */}
     </LandingPageContainer>
   );
 }
