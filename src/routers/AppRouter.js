@@ -15,7 +15,7 @@ import NotFoundPage from "../components/pages/NotFoundPage";
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      {/* <NavComponent /> */}
+      <NavComponent />
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route path="/about" component={AboutPage} />
@@ -24,7 +24,7 @@ const AppRouter = () => {
         <Route path="/codepen" component={CodepenPage} />
         <Route component={NotFoundPage} />
       </Switch>
-      {/* <FooterComponent /> */}
+      <FooterComponent />
     </BrowserRouter>
   );
 };

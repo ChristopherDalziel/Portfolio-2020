@@ -48,12 +48,12 @@ const SubHeading = styled.h2`
 function LandingPage() {
   return (
     <LandingPageContainer>
-      <NavComponent />
+      {/* <NavComponent /> */}
       <HeroTextContainer>
         <Heading>HELLO.</Heading>
         <SubHeading>my name's Chris.</SubHeading>
       </HeroTextContainer>
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </LandingPageContainer>
   );
 }

@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import styled from "@emotion/styled";
 
 const Navigation = styled.nav`
+  position: absolute;
+  z-index: 1;
   height: 10%;
   width: 100%;
   display: flex;
