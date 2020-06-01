@@ -1,23 +1,49 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import styled from "@emotion/styled";
+
+const Navigation = styled.nav`
+  padding-top: 8px;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+`;
+
+const NavigationText = styled.a`
+  padding: 3px 0px;
+  margin: 0 28px;
+  position: relative;
+  letter-spacing: 2px;
+  color: #493a37;
+  &:hover {
+    color: white;
+    background: #a8b7ab;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+`;
 
 const Nav = () => {
   return (
-    <div>
-      <h1>nav</h1>
-      <h2>
-        <Link to="/">Home page</Link>
-      </h2>
-      <h2>
-        <Link to="/about">About Me</Link>
-      </h2>
-      <h2>
-        <Link to="/portfolio">Portfolio</Link>
-      </h2>
-      <h2>
-        <Link to="/contact">Contact Me</Link>
-      </h2>
-    </div>
+    <Navigation>
+      <NavigationText>
+        <NavLink to="/">Home page</NavLink>
+      </NavigationText>
+      <NavigationText>
+        <NavLink to="/about">About Me</NavLink>
+      </NavigationText>
+      <NavigationText>
+        <NavLink to="/portfolio">Portfolio</NavLink>
+      </NavigationText>
+      <NavigationText>
+        <NavLink to="/contact">Contact Me</NavLink>
+      </NavigationText>
+    </Navigation>
   );
 };
 

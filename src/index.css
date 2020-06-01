@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Controlling a-links colours in their different states */
+a {
+  text-decoration: none;
+}
+
+/* Unvisited link  */
+a:visited {
+  color: #493a37;
+}
+
+/* Visited link    */
+a:hover {
+  color: white;
+}
+
+/* Mouse over link */
+a:active {
+  color: black;
+}
+
+#footerLink {
+  margin: 0px 5px;
+}
