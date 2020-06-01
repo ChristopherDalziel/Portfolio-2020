@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 /* Controlling a-links colours in their different states */
 a {
   text-decoration: none;

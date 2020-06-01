@@ -1,10 +1,16 @@
 import React from "react";
+import styled from "@emotion/styled";
+
+const LandingPageContainer = styled.main`
+  height: 90vh;
+  width: 100vw;
+`;
 
 function LandingPage() {
   return (
-    <div>
+    <LandingPageContainer>
       <p>home page</p>
-    </div>
+    </LandingPageContainer>
   );
 }
 

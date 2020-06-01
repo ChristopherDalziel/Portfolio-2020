@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import FooterComponent from "../components/Footer";
 
 import LandingPage from "../components/pages/LandingPage";
 import AboutPage from "../components/pages/AboutPage";
@@ -24,7 +24,7 @@ const AppRouter = () => {
         <Route path="/codepen" component={CodepenPage} />
         <Route component={NotFoundPage} />
       </Switch>
-      <Footer />
+      <FooterComponent />
     </BrowserRouter>
   );
 };

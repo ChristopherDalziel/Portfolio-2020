@@ -28,7 +28,7 @@ const NavigationText = styled.a`
   }
 `;
 
-const Nav = () => {
+const NavComponent = () => {
   return (
     <Navigation>
       <NavigationText>
@@ -47,4 +47,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavComponent;
