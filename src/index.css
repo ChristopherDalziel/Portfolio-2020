@@ -21,6 +21,7 @@ code {
 /* Controlling a-links colours in their different states */
 a {
   text-decoration: none;
+  color: #493a37;
 }
 
 /* Unvisited link  */
