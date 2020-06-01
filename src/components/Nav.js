@@ -13,7 +13,7 @@ const Navigation = styled.nav`
   text-transform: uppercase;
   font-size: 14px;
   @media (max-width: 815px) {
-    font-size: 10px;
+    display: none;
 `;
 
 const NavigationText = styled.a`

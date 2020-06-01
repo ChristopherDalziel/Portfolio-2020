@@ -11,11 +11,13 @@ import ContactPage from "../components/pages/ContactPage";
 import CodepenPage from "../components/pages/CodepenPage";
 
 import NotFoundPage from "../components/pages/NotFoundPage";
+import MobileNav from "../components/MobileNav";
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <NavComponent />
+      <MobileNav />
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route path="/about" component={AboutPage} />
