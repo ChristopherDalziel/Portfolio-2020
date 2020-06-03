@@ -12,14 +12,14 @@ const BurgerMenu = styled.nav`
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
-  @media (min-width: 820px) {
-    display: none;
 `;
 
 const BurgerIconHover = styled.div`
   margin: 0 0 0 5px;
   position: absolute;
   font-size: 30px;
+  @media (min-width: 820px) {
+    display: none;
 `;
 
 const BurgerText = styled.p`
