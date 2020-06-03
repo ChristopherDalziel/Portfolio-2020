@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import backgroundImage from "../../assets/Web_Final_Col.jpg";
+import resume from "../../assets/res.pdf";
 
 const AboutContainer = styled.main`
   height: 100vh;
@@ -15,7 +17,7 @@ const AboutContent = styled.div`
   font-size: 15px;
 `;
 
-const ResumeButton = styled.button`
+const ResumeButton = styled.a`
   font-family: "Open Sans", sans-serif;
   background-color: #ef636c;
   border: none;
@@ -32,7 +34,6 @@ const ResumeButton = styled.button`
 `;
 
 class AboutPage extends React.Component {
-  downloadResume = () => console.log("test");
   render() {
     return (
       <AboutContainer>
@@ -66,8 +67,15 @@ class AboutPage extends React.Component {
             <br />
             <br />
             <br />
-            <ResumeButton onclick={this.downloadResume}>
-              DOWNLOAD MY RESUME
+            <ResumeButton>
+              <Link
+                style={{ color: "white" }}
+                to={resume}
+                target="_blank"
+                download
+              >
+                DOWNLOAD MY RESUME
+              </Link>
             </ResumeButton>
           </p>
         </AboutContent>
