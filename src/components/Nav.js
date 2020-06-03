@@ -43,9 +43,9 @@ const NavComponent = () => {
       <NavigationText>
         <NavLink to="/portfolio">Portfolio</NavLink>
       </NavigationText>
-      <NavigationText>
+      {/* <NavigationText>
         <NavLink to="/codepen">Codepens</NavLink>
-      </NavigationText>
+      </NavigationText> */}
       <NavigationText>
         <NavLink to="/contact">Contact Me</NavLink>
       </NavigationText>
