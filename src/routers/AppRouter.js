@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
+import MobileNav from "../components/MobileNav";
 import NavComponent from "../components/Nav";
 import FooterComponent from "../components/Footer";
 
@@ -9,9 +10,7 @@ import AboutPage from "../components/pages/AboutPage";
 import PortfolioPage from "../components/pages/PortfolioPage";
 import ContactPage from "../components/pages/ContactPage";
 import CodepenPage from "../components/pages/CodepenPage";
-
 import NotFoundPage from "../components/pages/NotFoundPage";
-import MobileNav from "../components/MobileNav";
 import LoginPage from "../components/pages/LoginPage";
 import CreateProjectPage from "../components/pages/CreateProjectPage";
 
