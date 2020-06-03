@@ -12,6 +12,8 @@ import CodepenPage from "../components/pages/CodepenPage";
 
 import NotFoundPage from "../components/pages/NotFoundPage";
 import MobileNav from "../components/MobileNav";
+import LoginPage from "../components/pages/LoginPage";
+import CreateProjectPage from "../components/pages/CreateProjectPage";
 
 const AppRouter = () => {
   return (
@@ -24,6 +26,8 @@ const AppRouter = () => {
         <Route path="/portfolio" component={PortfolioPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/codepen" component={CodepenPage} />
+        <Route path="/login" component={LoginPage} />
+        <Route path="/createProject" component={CreateProjectPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <FooterComponent />
