@@ -64,12 +64,12 @@ const AboutPage = () => {
           <br />
           <br />
           <ResumeButton
-            id="btn"
-            type="submit"
-            onclick="window.open('content/res.pdf')"
+            onclick={(e) => {
+              e.preventDefault();
+              console.log("test");
+            }}
           >
-            {" "}
-            DOWNLOAD MY RESUME{" "}
+            DOWNLOAD MY RESUME
           </ResumeButton>
         </p>
       </AboutContent>

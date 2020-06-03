@@ -13,7 +13,7 @@ const BurgerMenu = styled.nav`
     display: none;
 `;
 
-const BurgerText = styled.a`
+const BurgerText = styled.p`
   list-style-type: none;
   text-decoration: none;
   color: #232323;

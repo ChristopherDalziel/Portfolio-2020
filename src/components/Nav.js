@@ -16,7 +16,7 @@ const Navigation = styled.nav`
     display: none;
 `;
 
-const NavigationText = styled.a`
+const NavigationText = styled.p`
   padding: 3px 0px;
   margin: 0 28px;
   position: relative;
