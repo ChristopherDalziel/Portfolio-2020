@@ -1,9 +1,12 @@
 import React from "react";
 
+import ProjectForm from "../ProjectForm";
+
 const CreateProjectPage = () => {
   return (
     <div>
-      <p>form will go here</p>
+      <p>hi</p>
+      <ProjectForm />
     </div>
   );
 };
