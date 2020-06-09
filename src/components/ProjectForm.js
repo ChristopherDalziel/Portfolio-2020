@@ -25,9 +25,19 @@ class ProjectForm extends React.Component {
     });
   };
 
-  onDescriptionChange = () => {};
+  onDescriptionChange = (e) => {
+    const description = e.target.value;
+    this.setState(() => {
+      return { description };
+    });
+  };
 
-  onTechnologyChange = () => {};
+  onTechnologyChange = (e) => {
+    const technology = e.target.value;
+    this.setState(() => {
+      return { technology };
+    });
+  };
 
   onSubmit = (e) => {
     e.preventDefault();
@@ -66,10 +76,20 @@ class ProjectForm extends React.Component {
             id="projectDescription"
             name="projectDescription"
             type="text"
+            aria-label="projectDescription"
+            value={this.state.description}
+            onChange={this.onDescriptionChange}
           ></textarea>
           <br />
-          <label for="projectDescription">Technology Used:</label>
-          <input id="technologyUsed" name="technologyUsed" type="text"></input>
+          <label for="technologyUsed">Technology Used:</label>
+          <input
+            id="technologyUsed"
+            name="technologyUsed"
+            type="text"
+            aria-label="technologyUsed"
+            value={this.state.technology}
+            onChange={this.onTechnologyChange}
+          ></input>
           <p>image upload goes here</p>
           <button type="submit">Submit Project</button>
         </form>
