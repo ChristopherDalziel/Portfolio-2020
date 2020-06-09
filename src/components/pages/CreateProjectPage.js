@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { connect } from "react-redux";
 import ProjectForm from "../ProjectForm";
+import { startCreateProject } from "../../actions/projects";
 
 const ProjectPageContainer = styled.main`
   height: 100vh;
@@ -13,14 +15,25 @@ const ProjectHeading = styled.h1`
   margin: 30px;
 `;
 
-const CreateProjectPage = () => {
-  return (
-    <ProjectPageContainer>
-      <ProjectHeading>Create a new project.</ProjectHeading>
+export class CreateProjectPage extends React.Component {
+  onSubmit = (project) => {
+    this.props.startCreateProject(project);
+    this.props.history.push("/");
+  };
 
-      <ProjectForm />
-    </ProjectPageContainer>
-  );
-};
+  render() {
+    return (
+      <ProjectPageContainer>
+        <ProjectHeading>Create a new project.</ProjectHeading>
 
-export default CreateProjectPage;
+        <ProjectForm onSubmit={this.onSubmit} />
+      </ProjectPageContainer>
+    );
+  }
+}
+
+const mapDispatchToProps = (dispatch) => ({
+  startCreateProject: (project) => dispatch(startCreateProject(project)),
+});
+
+export default connect(undefined, mapDispatchToProps)(CreateProjectPage);

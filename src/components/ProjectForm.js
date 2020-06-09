@@ -13,6 +13,8 @@ class ProjectForm extends React.Component {
     super(props);
     this.state = {
       name: props.project ? props.project.name : "",
+      description: props.project ? props.project.description : "",
+      technology: props.project ? props.project.technology : "",
     };
   }
 
@@ -30,9 +32,18 @@ class ProjectForm extends React.Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    this.props.onSubmit({
-      name: this.state.name,
-    });
+    if (!this.state.name) {
+      this.setState(() => ({
+        error: "Please provide a name ",
+      }));
+    } else {
+      this.setState(() => ({ error: "" }));
+      this.props.onSubmit({
+        name: this.state.name,
+        description: this.state.description,
+        technology: this.state.technology,
+      });
+    }
   };
 
   render() {
