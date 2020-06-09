@@ -10,7 +10,7 @@ const ProjectPageContainer = styled.main`
 `;
 
 const ProjectHeading = styled.h1`
-  margin: 10px;
+  margin: 30px;
 `;
 
 const CreateProjectPage = () => {
