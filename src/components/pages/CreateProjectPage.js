@@ -25,7 +25,6 @@ export class CreateProjectPage extends React.Component {
     return (
       <ProjectPageContainer>
         <ProjectHeading>Create a new project.</ProjectHeading>
-
         <ProjectForm onSubmit={this.onSubmit} />
       </ProjectPageContainer>
     );
