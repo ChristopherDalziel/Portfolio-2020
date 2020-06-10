@@ -7,8 +7,13 @@ export const createProject = (project) => ({
 
 export const startCreateProject = (projectData = {}) => {
   return (dispatch, getState) => {
-    const { name = "", description = "", technology = "" } = projectData;
-    const project = { name, description, technology };
+    const {
+      name = "",
+      description = "",
+      technology = "",
+      url = "",
+    } = projectData;
+    const project = { name, description, technology, url };
     return database
       .ref("projects")
       .push(project)

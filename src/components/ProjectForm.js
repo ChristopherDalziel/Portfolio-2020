@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import ImageUpload from "./ImageUpload";
+import { storage } from "../firebase/firebase";
 
 const ProjectFormContainer = styled.div`
   height: 100vh;
@@ -16,7 +16,8 @@ class ProjectForm extends React.Component {
       name: props.project ? props.project.name : "",
       description: props.project ? props.project.description : "",
       technology: props.project ? props.project.technology : "",
-      image: props.project ? props.project.image : "",
+      image: null,
+      url: "",
     };
   }
 
@@ -41,14 +42,42 @@ class ProjectForm extends React.Component {
     });
   };
 
-  // onImageChange = (e) => {
-  //   const image = e.target.files[0];
-  //   this.setState(() => {
-  //     return console.log(image);
-  //   });
-  // };
+  onImageChange = (e) => {
+    if (e.target.files[0]) {
+      const image = e.target.files[0];
+      this.setState(() => ({ image }));
+    }
+  };
 
-  // handleImageUpload = () => {};
+  handleUpload = (e) => {
+    e.preventDefault();
+    const { image } = this.state;
+    const uploadTask = storage.ref(`images/${image.name}`).put(image);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        // // progress function ....
+        // const progress = Math.round(
+        //   (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        // );
+        // this.setState({ progress });
+      },
+      (error) => {
+        // error function ....
+        console.log(error);
+      },
+      () => {
+        // complete function ....
+        storage
+          .ref("images")
+          .child(image.name)
+          .getDownloadURL()
+          .then((url) => {
+            this.setState({ url });
+          });
+      }
+    );
+  };
 
   onSubmit = (e) => {
     e.preventDefault();
@@ -63,6 +92,7 @@ class ProjectForm extends React.Component {
         name: this.state.name,
         description: this.state.description,
         technology: this.state.technology,
+        url: this.state.url,
       });
     }
   };
@@ -101,7 +131,11 @@ class ProjectForm extends React.Component {
             value={this.state.technology}
             onChange={this.onTechnologyChange}
           ></input>
-          <ImageUpload />
+          <br />
+          <input type="file" onChange={this.onImageChange} />
+          <br />
+          <button onClick={this.handleUpload}>Upload</button>
+          <br />
           <button type="submit">Submit Project</button>
         </form>
       </ProjectFormContainer>
