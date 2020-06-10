@@ -1,4 +1,5 @@
 import * as firebase from "firebase";
+import "firebase/storage";
 
 // Firebase config
 const firebaseConfig = {
@@ -18,8 +19,11 @@ firebase.initializeApp(firebaseConfig);
 // Testing the firebase connection
 const database = firebase.database();
 
+// Firebase image storage ?
+const storage = firebase.storage();
+
 // Google Authentication
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
 // Exporting firebase for use within our application
-export { firebase, googleAuthProvider, database as default };
+export { firebase, googleAuthProvider, storage, database as default };

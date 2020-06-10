@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import ImageUpload from "./ImageUpload";
 
 const ProjectFormContainer = styled.div`
   height: 100vh;
@@ -15,6 +16,7 @@ class ProjectForm extends React.Component {
       name: props.project ? props.project.name : "",
       description: props.project ? props.project.description : "",
       technology: props.project ? props.project.technology : "",
+      image: props.project ? props.project.image : "",
     };
   }
 
@@ -38,6 +40,15 @@ class ProjectForm extends React.Component {
       return { technology };
     });
   };
+
+  // onImageChange = (e) => {
+  //   const image = e.target.files[0];
+  //   this.setState(() => {
+  //     return console.log(image);
+  //   });
+  // };
+
+  // handleImageUpload = () => {};
 
   onSubmit = (e) => {
     e.preventDefault();
@@ -90,7 +101,7 @@ class ProjectForm extends React.Component {
             value={this.state.technology}
             onChange={this.onTechnologyChange}
           ></input>
-          <p>image upload goes here</p>
+          <ImageUpload />
           <button type="submit">Submit Project</button>
         </form>
       </ProjectFormContainer>
