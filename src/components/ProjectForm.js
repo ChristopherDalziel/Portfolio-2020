@@ -56,18 +56,12 @@ class ProjectForm extends React.Component {
     uploadTask.on(
       "state_changed",
       (snapshot) => {
-        // // progress function ....
-        // const progress = Math.round(
-        //   (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-        // );
-        // this.setState({ progress });
+        // Can put image upload progression here if required
       },
       (error) => {
-        // error function ....
         console.log(error);
       },
       () => {
-        // complete function ....
         storage
           .ref("images")
           .child(image.name)
