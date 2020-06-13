@@ -22,3 +22,8 @@ export const startCreateProject = (projectData = {}) => {
       });
   };
 };
+
+export const setProjects = (projects) => ({
+  type: "SET_PROJECTS",
+  projects,
+});

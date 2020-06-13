@@ -9,6 +9,10 @@ import configureStore from "./store/configureStore";
 
 const store = configureStore();
 
+const state = store.getState();
+
+console.log(state);
+
 const wrappedApplication = (
   <Provider store={store}>
     <AppRouter />
