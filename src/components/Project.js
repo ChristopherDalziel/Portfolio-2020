@@ -5,7 +5,7 @@ const Project = ({ name, description, technology, url }) => (
     <p>{name}</p>
     <p>{description}</p>
     <p>{technology}</p>
-    <img src={url} />
+    <img src={url} alt="related to project name" />
   </>
 );
 
