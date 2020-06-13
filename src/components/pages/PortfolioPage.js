@@ -3,16 +3,17 @@ import styled from "@emotion/styled";
 import ProjectList from "../ProjectList";
 import backgroundImage from "../../assets/Web_Background.png";
 
-const PortfolioPageContainer = styled.div`
-background-image: url(${backgroundImage})
-background-size: cover;
-height: 100vh`;
+const PortfolioContainer = styled.main`
+  height: 100vh;
+  background-image: url(${backgroundImage});
+  background-size: cover;
+`;
 
 const PortfolioPage = () => {
   return (
-    <PortfolioPageContainer>
+    <PortfolioContainer>
       <ProjectList />
-    </PortfolioPageContainer>
+    </PortfolioContainer>
   );
 };
 
