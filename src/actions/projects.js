@@ -27,3 +27,23 @@ export const setProjects = (projects) => ({
   type: "SET_PROJECTS",
   projects,
 });
+
+export const startSetProjects = () => {
+  return (dispatch, getState) => {
+    return database
+      .ref("projects")
+      .once("value")
+      .then((snapshot) => {
+        const projects = [];
+
+        snapshot.forEach((childSnapshot) => {
+          projects.push({
+            id: childSnapshot.key,
+            ...childSnapshot.val(),
+          });
+        });
+
+        dispatch(setProjects(projects));
+      });
+  };
+};
