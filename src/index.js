@@ -6,8 +6,18 @@ import AppRouter from "./routers/AppRouter";
 import * as serviceWorker from "./serviceWorker";
 
 import configureStore from "./store/configureStore";
+import { createProject } from "./actions/projects";
 
 const store = configureStore();
+
+store.dispatch(
+  createProject({
+    name: "test project 1",
+    description: "test project 1",
+    technology: "the tech",
+    url: "maybe url? ",
+  })
+);
 
 const state = store.getState();
 
