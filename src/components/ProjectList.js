@@ -1,26 +1,41 @@
 import React from "react";
 import { connect } from "react-redux";
 import Project from "./Project";
+import { startSetProjects } from "../actions/projects";
 
-const ProjectList = (props) => {
-  return (
-    <div>
-      {props.projects.length === 0 ? (
-        <p>No projects to display</p>
-      ) : (
-        props.projects.map((project) => {
-          return <Project key={project.title} {...project} />;
-        })
-      )}
-    </div>
-  );
+// export const ProjectList = (props) => (
+//   <div>
+//     <p>{props.name}</p>
+//     <p>{props.description}</p>
+//     <p>{props.technology}</p>
+//     <p>{props.url}</p>
+//   </div>
+// );
+
+// Regular Component
+const ProjectList = (props) => (
+  <div>
+    <h1>Project List</h1>
+    {props.projects.length}
+    <Project />
+    {props.projects.map((project) => {
+      return <Project key={project.id} {...project} />;
+    })}
+  </div>
+);
+
+// Function
+const mapStateToProps = (state) => {
+  return {
+    projects: state.projects,
+  };
 };
 
 // const mapStateToProps = (state) => {
 //   return {
-//     projects:
-//   }
-// }
+//     projects: startSetProjects(state.projects),
+//   };
+// };
 
-// export default connect(mapStateToProps)(ProjectList);
-export default ProjectList;
+export default connect(mapStateToProps)(ProjectList);
+// export default ProjectList;
