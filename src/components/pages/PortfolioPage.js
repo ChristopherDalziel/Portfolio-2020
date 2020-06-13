@@ -9,10 +9,18 @@ const PortfolioContainer = styled.main`
   background-size: cover;
 `;
 
+const PortfolioContent = styled.div`
+  height: 50%;
+  width: 50%;
+  padding: 200px;
+`;
+
 const PortfolioPage = () => {
   return (
     <PortfolioContainer>
-      <ProjectList />
+      <PortfolioContent>
+        <ProjectList />
+      </PortfolioContent>
     </PortfolioContainer>
   );
 };
