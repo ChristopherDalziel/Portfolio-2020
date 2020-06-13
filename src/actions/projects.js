@@ -36,8 +36,6 @@ export const startSetProjects = () => {
       .then((snapshot) => {
         const projects = [];
 
-        console.log(projects);
-
         snapshot.forEach((childSnapshot) => {
           projects.push({
             id: childSnapshot.key,
