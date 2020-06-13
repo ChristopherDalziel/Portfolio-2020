@@ -18,6 +18,7 @@ class ProjectForm extends React.Component {
       technology: props.project ? props.project.technology : "",
       image: null,
       url: "",
+      progress: 0,
     };
   }
 
@@ -56,7 +57,10 @@ class ProjectForm extends React.Component {
     uploadTask.on(
       "state_changed",
       (snapshot) => {
-        // Can put image upload progression here if required
+        const progress = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+        this.setState({ progress });
       },
       (error) => {
         console.log(error);
@@ -129,6 +133,8 @@ class ProjectForm extends React.Component {
           <input type="file" onChange={this.onImageChange} />
           <br />
           <button onClick={this.handleUpload}>Upload</button>
+          <br />
+          <progress value={this.state.progress} max="100" />
           <br />
           <button type="submit">Submit Project</button>
         </form>
