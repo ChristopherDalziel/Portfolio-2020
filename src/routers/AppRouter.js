@@ -16,6 +16,7 @@ import LoginPage from "../components/pages/LoginPage";
 import CreateProjectPage from "../components/pages/CreateProjectPage";
 
 import PrivateRoute from "./PrivateRoute";
+import PublicRoute from "./PublicRoute";
 
 export const history = createHistory();
 

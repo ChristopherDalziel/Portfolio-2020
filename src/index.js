@@ -38,9 +38,9 @@ firebase.auth().onAuthStateChanged((user) => {
     store.dispatch(login(user.uid));
     store.dispatch(startSetProjects()).then(() => {
       renderApp();
-      // if (history.location.pathname === "/login") {
-      //   history.push("/createproject");
-      // }
+      if (history.location.pathname === "/login") {
+        history.push("/createproject");
+      }
     });
   } else {
     store.dispatch(logout());

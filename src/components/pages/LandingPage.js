@@ -4,8 +4,6 @@ import backgroundImage from "../../assets/Web_Final_Col.jpg";
 import mobileBackgroundImage from "../../assets/Web_Final_Col_Mob.jpg";
 import { keyframes } from "@emotion/core";
 
-import { AdminInfo, AuthInfo } from "../Auth-Test";
-
 const fadeInAnimation = keyframes`
   0% {
     opacity: 0;
