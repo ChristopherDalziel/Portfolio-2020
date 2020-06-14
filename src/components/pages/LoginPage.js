@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { connect } from "react-redux";
+import { startLogin } from "../../actions/auth";
 
 const LoginContainer = styled.main`
   height: 100vh;
@@ -24,10 +26,10 @@ const LoginButton = styled.a`
   }
 `;
 
-const LoginPage = () => {
+export const LoginPage = ({ startLogin }) => {
   return (
     <LoginContainer>
-      <LoginButton>Admin Login</LoginButton>
+      <LoginButton onClick={startLogin}>Admin Login</LoginButton>
       <p>
         : If you've found this page and you're not an admin please return to the
         rest of my portfolio by using the navigation above.
@@ -36,4 +38,8 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+const mapDispatchToProps = (dispatch) => ({
+  startLogin: () => dispatch(startLogin()),
+});
+
+export default connect(undefined, mapDispatchToProps)(LoginPage);
