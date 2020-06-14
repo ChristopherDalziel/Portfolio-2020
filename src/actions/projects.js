@@ -7,6 +7,7 @@ export const createProject = (project) => ({
 
 export const startCreateProject = (projectData = {}) => {
   return (dispatch, getState) => {
+    const uid = getState().auth.uid;
     const {
       name = "",
       description = "",
@@ -15,7 +16,7 @@ export const startCreateProject = (projectData = {}) => {
     } = projectData;
     const project = { name, description, technology, url };
     return database
-      .ref("projects")
+      .ref(`users/${uid}/projects`)
       .push(project)
       .then((ref) => {
         dispatch(createProject({ id: ref.key, ...project }));

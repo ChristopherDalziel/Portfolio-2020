@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import "./index.css";
-import AppRouter from "./routers/AppRouter";
+import AppRouter, { history } from "./routers/AppRouter";
 import * as serviceWorker from "./serviceWorker";
 
 import configureStore from "./store/configureStore";
 import { startSetProjects } from "./actions/projects";
+import { login, logout } from "./actions/auth";
+import { firebase } from "./firebase/firebase";
 
 const store = configureStore();
 
@@ -30,9 +32,27 @@ const renderApp = () => {
 
 ReactDOM.render(<p>Loading...</p>, document.getElementById("root"));
 
-store.dispatch(startSetProjects()).then(() => {
-  renderApp();
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // Only run if user is logged in
+    store.dispatch(login(user.uid));
+    store.dispatch(startSetProjects()).then(() => {
+      renderApp();
+      if (history.location.pathname === "/login") {
+        history.push("/createproject");
+      }
+    });
+  } else {
+    store.dispatch(logout());
+    store.dispatch(startSetProjects()).then(() => {
+      renderApp();
+    });
+  }
 });
+
+// store.dispatch(startSetProjects()).then(() => {
+//   renderApp();
+// });
 
 // ReactDOM.render(wrappedApplication, document.getElementById("root"));
 

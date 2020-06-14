@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
+import createHistory from "history/createBrowserHistory";
 
 import MobileNav from "../components/MobileNav";
 import NavComponent from "../components/Nav";
@@ -14,9 +15,13 @@ import NotFoundPage from "../components/pages/NotFoundPage";
 import LoginPage from "../components/pages/LoginPage";
 import CreateProjectPage from "../components/pages/CreateProjectPage";
 
+import PrivateRoute from "./PrivateRoute";
+
+export const history = createHistory();
+
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <Router history={history}>
       <NavComponent />
       <MobileNav />
       <Switch>
@@ -26,11 +31,11 @@ const AppRouter = () => {
         <Route path="/contact" component={ContactPage} />
         <Route path="/codepen" component={CodepenPage} />
         <Route path="/login" component={LoginPage} />
-        <Route path="/createProject" component={CreateProjectPage} />
+        <PrivateRoute path="/createProject" component={CreateProjectPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <FooterComponent />
-    </BrowserRouter>
+    </Router>
   );
 };
 
