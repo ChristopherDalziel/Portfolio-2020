@@ -31,8 +31,10 @@ export const setProjects = (projects) => ({
 
 export const startSetProjects = () => {
   return (dispatch, getState) => {
+    const uid = getState().auth.uid;
+    console.log(uid);
     return database
-      .ref("projects")
+      .ref(`users/${uid}/projects`)
       .once("value")
       .then((snapshot) => {
         const projects = [];

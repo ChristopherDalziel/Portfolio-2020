@@ -18,7 +18,7 @@ const ProjectHeading = styled.h1`
 export class CreateProjectPage extends React.Component {
   onSubmit = (project) => {
     this.props.startCreateProject(project);
-    this.props.history.push("/");
+    this.props.history.push("/portfolio");
   };
 
   render() {

@@ -2,8 +2,12 @@ import React from "react";
 import styled from "@emotion/styled";
 import { connect } from "react-redux";
 import { startLogin, startLogout } from "../../actions/auth";
+import backgroundImage from "../../assets/Web_Background.png";
+import { history } from "../../routers/AppRouter";
 
 const LoginContainer = styled.main`
+  background-image: url(${backgroundImage});
+  background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,6 +22,7 @@ const Button = styled.a`
   padding: 12px 15px;
   cursor: pointer;
   font-size: 15px;
+  margin: 50px;
   &:hover {
     background: #a8b7ab;
     -webkit-transition: background 0.3s ease-in-out;
@@ -34,15 +39,22 @@ export const LoginLogoutPage = ({
   return (
     <LoginContainer>
       {isAuthenticated ? (
-        <Button onClick={startLogout}>Logout</Button>
+        <>
+          <Button onClick={startLogout}>Logout</Button>
+          <br />
+          ||
+          <br />
+          <Button
+            onClick={() => {
+              history.push("/createproject");
+            }}
+          >
+            Create new project
+          </Button>
+        </>
       ) : (
         <Button onClick={startLogin}>Login</Button>
       )}
-
-      {/* <p>
-        : If you've found this page and you're not an admin please return to the
-        rest of my portfolio by using the navigation above.
-      </p> */}
     </LoginContainer>
   );
 };
