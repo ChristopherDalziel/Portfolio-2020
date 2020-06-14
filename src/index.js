@@ -12,8 +12,6 @@ import { firebase } from "./firebase/firebase";
 
 const store = configureStore();
 
-// const state = store.getState();
-
 store.dispatch(startSetProjects());
 
 const wrappedApplication = (
@@ -33,8 +31,8 @@ const renderApp = () => {
 ReactDOM.render(<p>Loading...</p>, document.getElementById("root"));
 
 firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
-    // Only run if user is logged in
+  const savedUid = process.env.REACT_APP_FIREBASE_ADMIN_ID;
+  if (user && user.uid === savedUid) {
     store.dispatch(login(user.uid));
     store.dispatch(startSetProjects()).then(() => {
       renderApp();
