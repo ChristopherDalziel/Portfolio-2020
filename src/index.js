@@ -39,7 +39,7 @@ firebase.auth().onAuthStateChanged((user) => {
     store.dispatch(startSetProjects()).then(() => {
       renderApp();
       if (history.location.pathname === "/login") {
-        history.push("/createproject");
+        console.log("User logged in!");
       }
     });
   } else {

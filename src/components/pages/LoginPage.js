@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { connect } from "react-redux";
-import { startLogin } from "../../actions/auth";
+import { startLogin, startLogout } from "../../actions/auth";
 
 const LoginContainer = styled.main`
   height: 100vh;
@@ -26,20 +26,30 @@ const LoginButton = styled.a`
   }
 `;
 
-export const LoginPage = ({ startLogin }) => {
+export const LoginPage = ({ isAuthenticated, startLogin, startLogout }) => {
   return (
     <LoginContainer>
-      <LoginButton onClick={startLogin}>Admin Login</LoginButton>
-      <p>
+      {isAuthenticated ? (
+        <LoginButton onClick={startLogout}>Logout</LoginButton>
+      ) : (
+        <LoginButton onClick={startLogin}>Login</LoginButton>
+      )}
+
+      {/* <p>
         : If you've found this page and you're not an admin please return to the
         rest of my portfolio by using the navigation above.
-      </p>
+      </p> */}
     </LoginContainer>
   );
 };
 
-const mapDispatchToProps = (dispatch) => ({
-  startLogin: () => dispatch(startLogin()),
+const mapStateToProps = (state) => ({
+  isAuthenticated: !!state.auth.uid,
 });
 
-export default connect(undefined, mapDispatchToProps)(LoginPage);
+const mapDispatchToProps = (dispatch) => ({
+  startLogin: () => dispatch(startLogin()),
+  startLogout: () => dispatch(startLogout()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);
