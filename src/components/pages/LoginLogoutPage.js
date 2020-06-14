@@ -10,7 +10,7 @@ const LoginContainer = styled.main`
   align-items: center;
 `;
 
-const LoginButton = styled.a`
+const Button = styled.a`
   font-family: "Open Sans", sans-serif;
   background-color: #ef636c;
   border: none;
@@ -26,13 +26,17 @@ const LoginButton = styled.a`
   }
 `;
 
-export const LoginPage = ({ isAuthenticated, startLogin, startLogout }) => {
+export const LoginLogoutPage = ({
+  isAuthenticated,
+  startLogin,
+  startLogout,
+}) => {
   return (
     <LoginContainer>
       {isAuthenticated ? (
-        <LoginButton onClick={startLogout}>Logout</LoginButton>
+        <Button onClick={startLogout}>Logout</Button>
       ) : (
-        <LoginButton onClick={startLogin}>Login</LoginButton>
+        <Button onClick={startLogin}>Login</Button>
       )}
 
       {/* <p>
@@ -52,4 +56,4 @@ const mapDispatchToProps = (dispatch) => ({
   startLogout: () => dispatch(startLogout()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginLogoutPage);
