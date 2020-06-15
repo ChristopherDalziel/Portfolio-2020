@@ -24,6 +24,7 @@ const ContactTextArea = styled.textarea`
   width: 100%;
   max-width: 100%;
   resize: none;
+  background: transparent;
   &:focus {
     outline: 0;
     border: 1px solid #ef626b;
