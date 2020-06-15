@@ -9,6 +9,7 @@ import configureStore from "./store/configureStore";
 import { startSetProjects } from "./actions/projects";
 import { login, logout } from "./actions/auth";
 import { firebase } from "./firebase/firebase";
+import ApplicationLoading from "./utils/Loading";
 
 const store = configureStore();
 
@@ -28,7 +29,7 @@ const renderApp = () => {
   }
 };
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById("root"));
+ReactDOM.render(<ApplicationLoading />, document.getElementById("root"));
 
 firebase.auth().onAuthStateChanged((user) => {
   const savedUid = process.env.REACT_APP_FIREBASE_ADMIN_ID;
@@ -47,12 +48,6 @@ firebase.auth().onAuthStateChanged((user) => {
     });
   }
 });
-
-// store.dispatch(startSetProjects()).then(() => {
-//   renderApp();
-// });
-
-// ReactDOM.render(wrappedApplication, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
