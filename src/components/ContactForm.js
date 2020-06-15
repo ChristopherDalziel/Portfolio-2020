@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const ContactContent = styled.div`
-  margin: 200px 400px 0px 400px;
+  margin: 200px 200px 0px 200px;
 `;
 
 const ContactInput = styled.input`
@@ -66,22 +66,37 @@ class ContactForm extends React.Component {
     const { status } = this.state;
     return (
       <ContactContent>
-        <ContactHeading>Contact Me.</ContactHeading>
+        <ContactHeading>CONTACT ME.</ContactHeading>
         <form
           onSubmit={this.submitForm}
           action="https://formspree.io/xwkrbyzo"
           method="POST"
         >
           <label>Name:</label>
-          <ContactInput type="name" name="name" />
-          <label>Phone number:</label>
-          <ContactInput type="number" name="number" />
+          <ContactInput
+            autoFocus
+            required
+            placeholder="Your name"
+            type="name"
+            name="name"
+          />
           <label>Email:</label>
-          <ContactInput type="email" name="email" />
+          <ContactInput
+            placeholder="Your Email Address"
+            required
+            type="email"
+            name="email"
+          />
+          <label>Phone number:</label>
+          <ContactInput
+            placeholder="Your Phone Number (optional)"
+            type="number"
+            name="number"
+          />
           <label>Message:</label>
-          <ContactTextArea type="text" name="message" />
+          <ContactTextArea required type="text" name="message" />
           {status === "SUCCESS" ? (
-            <p>Thankyou! Chris will be in contact with you soon.</p>
+            <p>Thankyou! I will be in contact with you soon.</p>
           ) : (
             <ContactButton>Submit</ContactButton>
           )}
