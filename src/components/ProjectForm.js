@@ -1,12 +1,39 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { storage } from "../firebase/firebase";
+import Button from "../utils/Button";
 
 const ProjectFormContainer = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const ProjectInput = styled.input`
+  width: 100%;
+  border: none;
+  background: transparent;
+  margin: 0 0 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  &:focus {
+    outline: 0;
+    border-bottom: 1px solid #ef626b;
+  }
+`;
+
+const ProjectTextArea = styled.textarea`
+  border: none;
+  height: 100px;
+  width: 100%;
+  max-width: 100%;
+  resize: none;
+  background: transparent;
+  &:focus {
+    outline: 0;
+    border: 1px solid #ef626b;
+  }
 `;
 
 class ProjectForm extends React.Component {
@@ -100,7 +127,7 @@ class ProjectForm extends React.Component {
       <ProjectFormContainer>
         <form onSubmit={this.onSubmit}>
           <label for="projectName">Project Name:</label>
-          <input
+          <ProjectInput
             autoFocus
             id="projectName"
             name="projectName"
@@ -108,31 +135,31 @@ class ProjectForm extends React.Component {
             aria-label="projectName"
             value={this.state.name}
             onChange={this.onNameChange}
-          ></input>
+          />
           <br />
           <label for="projectDescription">Project Description:</label>
-          <textarea
+          <ProjectTextArea
             id="projectDescription"
             name="projectDescription"
             type="text"
             aria-label="projectDescription"
             value={this.state.description}
             onChange={this.onDescriptionChange}
-          ></textarea>
+          ></ProjectTextArea>
           <br />
           <label for="technologyUsed">Technology Used:</label>
-          <input
+          <ProjectInput
             id="technologyUsed"
             name="technologyUsed"
             type="text"
             aria-label="technologyUsed"
             value={this.state.technology}
             onChange={this.onTechnologyChange}
-          ></input>
+          />
           <br />
           <input type="file" onChange={this.onImageChange} />
           <br />
-          <button onClick={this.handleUpload}>Upload</button>
+          <Button handleClick={this.handleUpload}>Upload</Button>
           <br />
           <progress value={this.state.progress} max="100" />
           <br />

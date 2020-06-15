@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import Button from "../utils/Button";
 
 const ContactContent = styled.div`
   margin: 200px 200px 0px 200px;
@@ -28,23 +29,6 @@ const ContactTextArea = styled.textarea`
   &:focus {
     outline: 0;
     border: 1px solid #ef626b;
-  }
-`;
-
-const ContactButton = styled.button`
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background: #a8b7ab;
-  color: #fff;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
-  &:hover {
-    background: #ef626b;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
   }
 `;
 
@@ -103,7 +87,7 @@ class ContactForm extends React.Component {
           {status === "SUCCESS" ? (
             <p>Thankyou! I will be in contact with you soon.</p>
           ) : (
-            <ContactButton>Submit</ContactButton>
+            <Button>Submit</Button>
           )}
           {status === "ERROR" && (
             <p>An error has occured, your email has not been submitted.</p>

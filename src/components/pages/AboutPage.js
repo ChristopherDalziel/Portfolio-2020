@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import backgroundImage from "../../assets/Web_Final_Col.jpg";
 import resume from "../../assets/res.pdf";
+import Button from "../../utils/Button";
 
 const AboutContainer = styled.main`
   height: 100vh;
@@ -15,22 +16,6 @@ const AboutContent = styled.div`
   height: 80%;
   width: 30%;
   font-size: 15px;
-`;
-
-const ResumeButton = styled.a`
-  font-family: "Open Sans", sans-serif;
-  background-color: #ef636c;
-  border: none;
-  color: white;
-  padding: 12px 15px;
-  cursor: pointer;
-  font-size: 15px;
-  &:hover {
-    background: #a8b7ab;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-  }
 `;
 
 const AboutHeader = styled.h1`
@@ -71,7 +56,7 @@ class AboutPage extends React.Component {
             <br />
             <br />
             <br />
-            <ResumeButton>
+            <Button>
               <Link
                 style={{ color: "white" }}
                 to={resume}
@@ -80,7 +65,7 @@ class AboutPage extends React.Component {
               >
                 DOWNLOAD MY RESUME
               </Link>
-            </ResumeButton>
+            </Button>
           </p>
         </AboutContent>
       </AboutContainer>
