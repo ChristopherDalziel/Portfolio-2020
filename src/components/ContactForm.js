@@ -1,13 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-const ContactContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  height: 80%;
-`;
-
 const ContactContent = styled.div`
   margin: 200px 400px 0px 400px;
 `;
