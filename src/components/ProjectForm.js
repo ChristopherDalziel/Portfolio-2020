@@ -44,6 +44,7 @@ class ProjectForm extends React.Component {
       description: props.project ? props.project.description : "",
       technology: props.project ? props.project.technology : "",
       image: null,
+      githubUrl: props.project ? props.project.githubUrl : "",
       url: "",
       progress: 0,
     };
@@ -75,6 +76,13 @@ class ProjectForm extends React.Component {
       const image = e.target.files[0];
       this.setState(() => ({ image }));
     }
+  };
+
+  onGithubUrlChange = (e) => {
+    const githubUrl = e.target.value;
+    this.setState(() => {
+      return { githubUrl };
+    });
   };
 
   handleUpload = (e) => {
@@ -117,6 +125,7 @@ class ProjectForm extends React.Component {
         name: this.state.name,
         description: this.state.description,
         technology: this.state.technology,
+        githubUrl: this.state.githubUrl,
         url: this.state.url,
       });
     }
@@ -155,6 +164,15 @@ class ProjectForm extends React.Component {
             aria-label="technologyUsed"
             value={this.state.technology}
             onChange={this.onTechnologyChange}
+          />
+          <label for="githubUrl">GitHub Url:</label>
+          <ProjectInput
+            id="githubUrl"
+            name="githubUrl"
+            type="text"
+            aria-label="githubUrl"
+            value={this.state.githubUrl}
+            onChange={this.onGithubUrlChange}
           />
           <br />
           <input type="file" onChange={this.onImageChange} />

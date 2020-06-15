@@ -12,9 +12,10 @@ export const startCreateProject = (projectData = {}) => {
       name = "",
       description = "",
       technology = "",
+      githubUrl = "",
       url = "",
     } = projectData;
-    const project = { name, description, technology, url };
+    const project = { name, description, technology, githubUrl, url };
     return database
       .ref(`users/${uid}/projects`)
       .push(project)
