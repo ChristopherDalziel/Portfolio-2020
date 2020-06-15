@@ -33,14 +33,18 @@ const ResumeButton = styled.a`
   }
 `;
 
+const AboutHeader = styled.h1`
+  color: #493a37;
+`;
+
 class AboutPage extends React.Component {
   render() {
     return (
       <AboutContainer>
         <AboutContent>
-          <h1>
+          <AboutHeader>
             Hello. <br /> my names Chris.
-          </h1>
+          </AboutHeader>
           <br />
           <p>
             Over the past 6 years I’ve had the privilege of working as a store

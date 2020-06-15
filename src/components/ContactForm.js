@@ -94,7 +94,12 @@ class ContactForm extends React.Component {
             name="number"
           />
           <label>Message:</label>
-          <ContactTextArea required type="text" name="message" />
+          <ContactTextArea
+            required
+            placeholder="Type your message here...."
+            type="text"
+            name="message"
+          />
           {status === "SUCCESS" ? (
             <p>Thankyou! I will be in contact with you soon.</p>
           ) : (
