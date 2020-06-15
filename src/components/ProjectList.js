@@ -21,7 +21,7 @@ const ProjectList = (props) => (
 
 const mapStateToProps = (state) => {
   return {
-    projects: state.projects,
+    projects: state.projects.reverse(),
   };
 };
 

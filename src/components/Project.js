@@ -8,6 +8,7 @@ const ProjectContainer = styled.div`
   flex-direct: row;
   width: 90%;
   margin: 10px;
+  margin-bottom: 17px;
 `;
 
 const ProjectInfoDisplay = styled.div`
