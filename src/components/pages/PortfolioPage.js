@@ -7,12 +7,13 @@ const PortfolioContainer = styled.main`
   height: 100vh;
   background-image: url(${backgroundImage});
   background-size: cover;
+  overflow: scroll;
 `;
 
 const PortfolioContent = styled.div`
   height: 50%;
-  width: 50%;
-  padding: 200px;
+  width: 80%;
+  padding: 75px 200px;
 `;
 
 const PortfolioPage = () => {

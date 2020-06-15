@@ -2,9 +2,10 @@ import React from "react";
 import { connect } from "react-redux";
 import styled from "@emotion/styled";
 import Project from "./Project";
-import backgroundImage from "../assets/Web_Background.png";
 
-const ProjectListContainer = styled.div``;
+const ProjectListContainer = styled.div`
+  height: 100vh;
+`;
 
 const ProjectList = (props) => (
   <ProjectListContainer>
