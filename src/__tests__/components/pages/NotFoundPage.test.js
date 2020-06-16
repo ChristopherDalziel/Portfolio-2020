@@ -4,6 +4,6 @@ import toJSON from "enzyme-to-json";
 import NotFoundPage from "../../../components/pages/NotFoundPage";
 
 test("Should render NotFoundPage correctly", () => {
-  wrapper = shallow(<NotFoundPage />);
+  const wrapper = shallow(<NotFoundPage />);
   expect(toJSON(wrapper)).toMatchSnapshot();
 });

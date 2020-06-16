@@ -4,6 +4,6 @@ import toJSON from "enzyme-to-json";
 import PortfolioPage from "../../../components/pages/PortfolioPage";
 
 test("Should render the Portfolio Page correctly", () => {
-  wrapper = shallow(<PortfolioPage />);
+  const wrapper = shallow(<PortfolioPage />);
   expect(toJSON(wrapper)).toMatchSnapshot();
 });
