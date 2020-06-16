@@ -1,3 +1,4 @@
+import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import {
   createProject,
@@ -10,6 +11,7 @@ import database from "../../firebase/firebase";
 
 const uid = "ThisIsMyTestUID";
 const defaultAuthState = { auth: { uid } };
+const createMockStore = configureMockStore([thunk]);
 
 beforeEach((done) => {
   const projectData = {};
@@ -30,4 +32,36 @@ test("Should set up create project action with provided values", () => {
     type: "CREATE_PROJECT",
     project: projects[0],
   });
+});
+
+test("Should add test project to database and store", () => {
+  const store = createMockStore(defaultAuthState);
+  const projectData = {
+    name: "another test project",
+    description: "i just want a project that I can test",
+    technology: "xbox one",
+    githubUrl: "there is no url",
+    url: "hmmm",
+  };
+  store
+    .dispatch(startCreateProject(projectData))
+    .then(() => {
+      const actions = store.getActions();
+      expect(actions[0]).toEqual({
+        type: "CREATE_PROJECT",
+        project: {
+          id: expect.any(String),
+          ...projectData,
+        },
+      });
+
+      // Check if the data was saved to the database
+      return database
+        .ref(`users/${uid}/projects/${actions[0].project.id}`)
+        .once("value");
+    })
+    .then((snapshot) => {
+      expect(snapshot.val()).toEqual(projectData);
+      done();
+    });
 });
