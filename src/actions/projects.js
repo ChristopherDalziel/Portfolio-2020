@@ -31,8 +31,8 @@ export const setProjects = (projects) => ({
 });
 
 export const startSetProjects = () => {
-  return (dispatch, getState) => {
-    const uid = getState().auth.uid;
+  return (dispatch) => {
+    const uid = process.env.REACT_APP_FIREBASE_ADMIN_ID;
     return database
       .ref(`users/${uid}/projects`)
       .once("value")
