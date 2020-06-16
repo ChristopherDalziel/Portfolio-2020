@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Create Project Page correctly 1`] = `
+<Styled(main)>
+  <Styled(h1)>
+    Create a new project.
+  </Styled(h1)>
+  <ProjectForm
+    onSubmit={[Function]}
+  />
+</Styled(main)>
+`;
