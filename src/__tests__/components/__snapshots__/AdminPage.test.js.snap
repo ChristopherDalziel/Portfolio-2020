@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Admin Page correctly 1`] = `
+<Styled(main)>
+  <Styled(a)>
+    Login
+  </Styled(a)>
+</Styled(main)>
+`;
