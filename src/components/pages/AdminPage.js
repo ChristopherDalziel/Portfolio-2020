@@ -31,11 +31,7 @@ const Button = styled.a`
   }
 `;
 
-export const LoginLogoutPage = ({
-  isAuthenticated,
-  startLogin,
-  startLogout,
-}) => {
+export const AdminPage = ({ isAuthenticated, startLogin, startLogout }) => {
   return (
     <LoginContainer>
       {isAuthenticated ? (
@@ -68,4 +64,4 @@ const mapDispatchToProps = (dispatch) => ({
   startLogout: () => dispatch(startLogout()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginLogoutPage);
+export default connect(mapStateToProps, mapDispatchToProps)(AdminPage);
