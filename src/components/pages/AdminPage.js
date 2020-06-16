@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { startLogin, startLogout } from "../../actions/auth";
 import backgroundImage from "../../assets/Web_Background.png";
 import { history } from "../../routers/AppRouter";
+import Button from "../../utils/Button";
 
 const LoginContainer = styled.main`
   background-image: url(${backgroundImage});
@@ -14,34 +15,17 @@ const LoginContainer = styled.main`
   align-items: center;
 `;
 
-const Button = styled.a`
-  font-family: "Open Sans", sans-serif;
-  background-color: #ef636c;
-  border: none;
-  color: white;
-  padding: 12px 15px;
-  cursor: pointer;
-  font-size: 15px;
-  margin: 50px;
-  &:hover {
-    background: #a8b7ab;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-  }
-`;
-
 export const AdminPage = ({ isAuthenticated, startLogin, startLogout }) => {
   return (
     <LoginContainer>
       {isAuthenticated ? (
         <>
-          <Button onClick={startLogout}>Logout</Button>
+          <Button handleClick={startLogout}>Logout</Button>
           <br />
           ||
           <br />
           <Button
-            onClick={() => {
+            handleClick={() => {
               history.push("/createproject");
             }}
           >
@@ -49,7 +33,7 @@ export const AdminPage = ({ isAuthenticated, startLogin, startLogout }) => {
           </Button>
         </>
       ) : (
-        <Button onClick={startLogin}>Login</Button>
+        <Button handleClick={startLogin}>Login</Button>
       )}
     </LoginContainer>
   );

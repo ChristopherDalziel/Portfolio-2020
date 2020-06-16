@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render with passed props 1`] = `
+<Styled(button)
+  onClick={[Function]}
+  type={true}
+>
+  Test button
+</Styled(button)>
+`;

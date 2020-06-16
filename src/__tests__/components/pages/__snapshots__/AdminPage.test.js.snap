@@ -2,8 +2,8 @@
 
 exports[`Should render Admin Page correctly 1`] = `
 <Styled(main)>
-  <Styled(a)>
+  <Button>
     Login
-  </Styled(a)>
+  </Button>
 </Styled(main)>
 `;
