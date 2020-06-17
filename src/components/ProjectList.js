@@ -7,7 +7,7 @@ const ProjectListContainer = styled.div`
   height: 100vh;
 `;
 
-const ProjectList = (props) => (
+export const ProjectList = (props) => (
   <ProjectListContainer>
     {props.projects.length === 0 ? (
       <p>No project(s) to display right now</p>

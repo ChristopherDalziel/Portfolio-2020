@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render list with projects 1`] = `
+<Styled(div)>
+  <Project
+    description="Fixture Project 1"
+    githubUrl="http//fakegithuburl.com"
+    name="Fixture Project 1"
+    technology="Ruby"
+    url="Image Url"
+  />
+  <Project
+    description="Fixture Project 2"
+    githubUrl="http//fakegithuburl.com"
+    name="Fixture Project 2"
+    technology="JavaScript"
+    url="Image Url"
+  />
+  <Project
+    description="Fixture Project 3"
+    githubUrl="http//fakegithuburl.com"
+    name="Fixture Project 3"
+    technology="Elixir"
+    url="Image Url"
+  />
+</Styled(div)>
+`;
+
+exports[`Should render project list with empty message 1`] = `
+<Styled(div)>
+  <p>
+    No project(s) to display right now
+  </p>
+</Styled(div)>
+`;
