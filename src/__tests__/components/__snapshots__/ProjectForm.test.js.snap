@@ -1,0 +1,345 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Project Form correctly 1`] = `
+<Styled(div)>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      for="projectName"
+    >
+      Project Name:
+    </label>
+    <Styled(input)
+      aria-label="projectName"
+      autoFocus={true}
+      id="projectName"
+      name="projectName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <label
+      for="projectDescription"
+    >
+      Project Description:
+    </label>
+    <Styled(textarea)
+      aria-label="projectDescription"
+      id="projectDescription"
+      name="projectDescription"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <label
+      for="technologyUsed"
+    >
+      Technology Used:
+    </label>
+    <Styled(input)
+      aria-label="technologyUsed"
+      id="technologyUsed"
+      name="technologyUsed"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      for="githubUrl"
+    >
+      GitHub Url:
+    </label>
+    <Styled(input)
+      aria-label="githubUrl"
+      id="githubUrl"
+      name="githubUrl"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <input
+      onChange={[Function]}
+      type="file"
+    />
+    <br />
+    <Button
+      handleClick={[Function]}
+    >
+      Upload
+    </Button>
+    <br />
+    <progress
+      max="100"
+      value={0}
+    />
+    <br />
+    <button
+      type="submit"
+    >
+      Submit Project
+    </button>
+  </form>
+</Styled(div)>
+`;
+
+exports[`Should render Project Form with project data 1`] = `
+<Styled(div)>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      for="projectName"
+    >
+      Project Name:
+    </label>
+    <Styled(input)
+      aria-label="projectName"
+      autoFocus={true}
+      id="projectName"
+      name="projectName"
+      onChange={[Function]}
+      type="text"
+      value="Fixture Project 1"
+    />
+    <br />
+    <label
+      for="projectDescription"
+    >
+      Project Description:
+    </label>
+    <Styled(textarea)
+      aria-label="projectDescription"
+      id="projectDescription"
+      name="projectDescription"
+      onChange={[Function]}
+      type="text"
+      value="Fixture Project 1"
+    />
+    <br />
+    <label
+      for="technologyUsed"
+    >
+      Technology Used:
+    </label>
+    <Styled(input)
+      aria-label="technologyUsed"
+      id="technologyUsed"
+      name="technologyUsed"
+      onChange={[Function]}
+      type="text"
+      value="Ruby"
+    />
+    <label
+      for="githubUrl"
+    >
+      GitHub Url:
+    </label>
+    <Styled(input)
+      aria-label="githubUrl"
+      id="githubUrl"
+      name="githubUrl"
+      onChange={[Function]}
+      type="text"
+      value="http//fakegithuburl.com"
+    />
+    <br />
+    <input
+      onChange={[Function]}
+      type="file"
+    />
+    <br />
+    <Button
+      handleClick={[Function]}
+    >
+      Upload
+    </Button>
+    <br />
+    <progress
+      max="100"
+      value={0}
+    />
+    <br />
+    <button
+      type="submit"
+    >
+      Submit Project
+    </button>
+  </form>
+</Styled(div)>
+`;
+
+exports[`Should render error for a invalid form submission 1`] = `
+<Styled(div)>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      for="projectName"
+    >
+      Project Name:
+    </label>
+    <Styled(input)
+      aria-label="projectName"
+      autoFocus={true}
+      id="projectName"
+      name="projectName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <label
+      for="projectDescription"
+    >
+      Project Description:
+    </label>
+    <Styled(textarea)
+      aria-label="projectDescription"
+      id="projectDescription"
+      name="projectDescription"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <label
+      for="technologyUsed"
+    >
+      Technology Used:
+    </label>
+    <Styled(input)
+      aria-label="technologyUsed"
+      id="technologyUsed"
+      name="technologyUsed"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      for="githubUrl"
+    >
+      GitHub Url:
+    </label>
+    <Styled(input)
+      aria-label="githubUrl"
+      id="githubUrl"
+      name="githubUrl"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <input
+      onChange={[Function]}
+      type="file"
+    />
+    <br />
+    <Button
+      handleClick={[Function]}
+    >
+      Upload
+    </Button>
+    <br />
+    <progress
+      max="100"
+      value={0}
+    />
+    <br />
+    <button
+      type="submit"
+    >
+      Submit Project
+    </button>
+  </form>
+</Styled(div)>
+`;
+
+exports[`Should render error for a invalid form submission 2`] = `
+<Styled(div)>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      for="projectName"
+    >
+      Project Name:
+    </label>
+    <Styled(input)
+      aria-label="projectName"
+      autoFocus={true}
+      id="projectName"
+      name="projectName"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <label
+      for="projectDescription"
+    >
+      Project Description:
+    </label>
+    <Styled(textarea)
+      aria-label="projectDescription"
+      id="projectDescription"
+      name="projectDescription"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <label
+      for="technologyUsed"
+    >
+      Technology Used:
+    </label>
+    <Styled(input)
+      aria-label="technologyUsed"
+      id="technologyUsed"
+      name="technologyUsed"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      for="githubUrl"
+    >
+      GitHub Url:
+    </label>
+    <Styled(input)
+      aria-label="githubUrl"
+      id="githubUrl"
+      name="githubUrl"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <br />
+    <input
+      onChange={[Function]}
+      type="file"
+    />
+    <br />
+    <Button
+      handleClick={[Function]}
+    >
+      Upload
+    </Button>
+    <br />
+    <progress
+      max="100"
+      value={0}
+    />
+    <br />
+    <button
+      type="submit"
+    >
+      Submit Project
+    </button>
+  </form>
+</Styled(div)>
+`;
