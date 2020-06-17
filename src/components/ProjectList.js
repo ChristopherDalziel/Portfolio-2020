@@ -4,7 +4,10 @@ import styled from "@emotion/styled";
 import Project from "./Project";
 
 const ProjectListContainer = styled.div`
-  height: 100vh;
+  margin-top: 6vh;
+  height: 87vh;
+  width: 100vw;
+  overflow: scroll;
 `;
 
 export const ProjectList = (props) => (

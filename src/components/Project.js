@@ -6,12 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ProjectContainer = styled.div`
   display: flex;
   flex-direct: row;
-  width: 90%;
+  width: 95vw;
   margin: 10px;
   margin-bottom: 17px;
 `;
 
 const ProjectInfoDisplay = styled.div`
+  height: 100%;
+  overflow: scroll;
   padding-top: 10px;
   margin-left: 10px;
 `;
