@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render individual project with data 1`] = `
+<Styled(div)
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <img
+    alt="related to project name"
+    src="Image Url"
+    width="650px"
+  />
+   
+</Styled(div)>
+`;
