@@ -16,10 +16,10 @@ const createMockStore = configureMockStore([thunk]);
 beforeEach((done) => {
   const projectData = {};
   projects.forEach(({ id, name, description, technology, githubUrl, url }) => {
-    (projectData[id] = name), description, technology, githubUrl, url;
+    projectData[id] = { name, description, technology, githubUrl, url };
   });
   database
-    .ref(`users/${uid}/projects`)
+    .ref("projects")
     .set(projectData)
     .then(() => {
       done();
@@ -56,9 +56,7 @@ test("Should add test project to database and store", (done) => {
       });
 
       // Check if the data was saved to the database
-      return database
-        .ref(`users/${uid}/projects/${actions[0].project.id}`)
-        .once("value");
+      return database.ref(`projects/${actions[0].project.id}`).once("value");
     })
     .then((snapshot) => {
       expect(snapshot.val()).toEqual(projectData);
@@ -86,9 +84,7 @@ test("Should add project with default values to database and store", (done) => {
           ...projectDefaults,
         },
       });
-      return database
-        .ref(`users/${uid}/projects/${actions[0].project.id}`)
-        .once("value");
+      return database.ref(`projects/${actions[0].project.id}`).once("value");
     })
     .then((snapshot) => {
       expect(snapshot.val()).toEqual(projectDefaults);
@@ -101,8 +97,7 @@ test("Should setup set project action object with data", () => {
   expect(action).toEqual({ type: "SET_PROJECTS", projects });
 });
 
-// Test now fails, returns empty
-test("Should fetch projects from firebase", (done) => {
+test("Should fetch the projects from firebase", (done) => {
   const store = createMockStore(defaultAuthState);
   store.dispatch(startSetProjects()).then(() => {
     const actions = store.getActions();

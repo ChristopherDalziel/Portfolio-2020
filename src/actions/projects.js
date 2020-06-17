@@ -6,8 +6,7 @@ export const createProject = (project) => ({
 });
 
 export const startCreateProject = (projectData = {}) => {
-  return (dispatch, getState) => {
-    const uid = getState().auth.uid;
+  return (dispatch) => {
     const {
       name = "",
       description = "",
@@ -17,7 +16,7 @@ export const startCreateProject = (projectData = {}) => {
     } = projectData;
     const project = { name, description, technology, githubUrl, url };
     return database
-      .ref(`users/${uid}/projects`)
+      .ref(`projects`)
       .push(project)
       .then((ref) => {
         dispatch(createProject({ id: ref.key, ...project }));
@@ -32,9 +31,8 @@ export const setProjects = (projects) => ({
 
 export const startSetProjects = () => {
   return (dispatch) => {
-    const uid = process.env.REACT_APP_FIREBASE_ADMIN_ID;
     return database
-      .ref(`users/${uid}/projects`)
+      .ref(`projects`)
       .once("value")
       .then((snapshot) => {
         const projects = [];

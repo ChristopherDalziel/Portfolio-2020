@@ -8,7 +8,6 @@ test("Should set default state", () => {
 
 test("Should create a new project", () => {
   const project = {
-    id: "4",
     name: "A new project",
     description: "Obviously the latest project",
     technology: "Ruby on Rails",
