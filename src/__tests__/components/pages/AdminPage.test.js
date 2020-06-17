@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { mount, shallow, render } from "enzyme";
 import toJSON from "enzyme-to-json";
 import { AdminPage } from "../../../components/pages/AdminPage";
 
@@ -11,7 +11,7 @@ test("Should render Admin Page correctly", () => {
 // Should be calling however is not working for unknown reasons
 test("Should call startLogin on button click", () => {
   const startLoginSpy = jest.fn();
-  const wrapper = shallow(<AdminPage handleClick={startLoginSpy} />);
+  const wrapper = mount(<AdminPage startLogin={startLoginSpy} />);
   wrapper.find("Button").simulate("click");
   expect(startLoginSpy).toHaveBeenCalled();
 });
