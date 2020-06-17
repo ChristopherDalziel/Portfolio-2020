@@ -5,6 +5,8 @@ exports[`Should render list with projects 1`] = `
   <Project
     description="Fixture Project 1"
     githubUrl="http//fakegithuburl.com"
+    id={1}
+    key="1"
     name="Fixture Project 1"
     technology="Ruby"
     url="Image Url"
@@ -12,6 +14,8 @@ exports[`Should render list with projects 1`] = `
   <Project
     description="Fixture Project 2"
     githubUrl="http//fakegithuburl.com"
+    id={2}
+    key="2"
     name="Fixture Project 2"
     technology="JavaScript"
     url="Image Url"
@@ -19,6 +23,8 @@ exports[`Should render list with projects 1`] = `
   <Project
     description="Fixture Project 3"
     githubUrl="http//fakegithuburl.com"
+    id={3}
+    key="3"
     name="Fixture Project 3"
     technology="Elixir"
     url="Image Url"

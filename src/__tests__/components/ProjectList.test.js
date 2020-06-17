@@ -1,8 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
 import toJSON from "enzyme-to-json";
-import projects from "../fixtures/projects";
 import { ProjectList } from "../../components/ProjectList";
+import projects from "../fixtures/projects";
 
 test("Should render list with projects", () => {
   const wrapper = shallow(<ProjectList projects={projects} />);

@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     name: "Fixture Project 1",
     description: "Fixture Project 1",
     technology: "Ruby",
@@ -7,6 +8,7 @@ export default [
     url: "Image Url",
   },
   {
+    id: 2,
     name: "Fixture Project 2",
     description: "Fixture Project 2",
     technology: "JavaScript",
@@ -14,6 +16,7 @@ export default [
     url: "Image Url",
   },
   {
+    id: 3,
     name: "Fixture Project 3",
     description: "Fixture Project 3",
     technology: "Elixir",
