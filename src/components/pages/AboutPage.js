@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import backgroundImage from "../../assets/Web_Final_Col.jpg";
+import mobileBackgroundImage from "../../assets/Web_Final_Col.jpg";
 import resume from "../../assets/res.pdf";
 import Button from "../../utils/Button";
 
@@ -9,6 +10,10 @@ const AboutContainer = styled.main`
   height: 100vh;
   background-image: url(${backgroundImage});
   background-size: cover;
+  @media (max-width: 815px) {
+    background-image: url(${mobileBackgroundImage});
+    overflow: hidden;
+  }
 `;
 
 const AboutContent = styled.div`
@@ -16,6 +21,14 @@ const AboutContent = styled.div`
   height: 80%;
   width: 30%;
   font-size: 15px;
+  @media (max-width: 815px) {
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    height: 94vh;
+    width: 100vw;
+  }
 `;
 
 const AboutHeader = styled.h1`
