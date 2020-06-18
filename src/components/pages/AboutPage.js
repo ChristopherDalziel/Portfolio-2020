@@ -27,7 +27,8 @@ const AboutContent = styled.div`
     bottom: 0;
     overflow: hidden;
     height: 94vh;
-    width: 100vw;
+    width: 90vw;
+    margin: 10px;
   }
 `;
 

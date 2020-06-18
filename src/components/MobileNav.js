@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const BurgerMenu = styled.nav`
-  background: pink;
+  background-color: #beb6af;
   width: 100px;
   padding: 5px;
   position: absolute;
@@ -24,7 +24,8 @@ const BurgerIconHover = styled.div`
 
 const BurgerText = styled.p`
   font-size: 12px;
-  color: #232323;
+  color: #483736;
+  text-transform: uppercase;
   transition: color 0.3s ease;
 `;
 

@@ -23,7 +23,8 @@ const LandingPageContainer = styled.main`
   width: 100vw;
   @media (max-width: 815px) {
     background-image: url(${mobileBackgroundImage});
-    background-size: auto 80vh;
+    background-color: #beb6af;
+    background-size: auto 90vh;
     background-repeat: no-repeat;
 `;
 
