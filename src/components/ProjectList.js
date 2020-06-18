@@ -5,7 +5,7 @@ import Project from "./Project";
 
 const ProjectListContainer = styled.div`
   margin-top: 6vh;
-  height: 87vh;
+  height: 86vh;
   width: 100vw;
   overflow: scroll;
   @media (max-width: 815px) {
