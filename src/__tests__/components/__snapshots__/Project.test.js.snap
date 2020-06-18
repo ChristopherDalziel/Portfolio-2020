@@ -5,10 +5,12 @@ exports[`Should render individual project with data 1`] = `
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
-  <img
+  <Styled(h4)>
+    Fixture Project 3
+  </Styled(h4)>
+  <Styled(img)
     alt="related to project name"
     src="Image Url"
-    width="650px"
   />
    
 </Styled(div)>
