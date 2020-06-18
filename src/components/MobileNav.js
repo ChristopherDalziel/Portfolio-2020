@@ -53,10 +53,10 @@ const MobileNav = () => {
           </BurgerText>
           <br />
 
-          <BurgerText>
+          {/* <BurgerText>
             <NavLink to="/codepen">Codepens</NavLink>
           </BurgerText>
-          <br />
+          <br /> */}
 
           <BurgerText>
             <NavLink to="/contact">Contact Me</NavLink>
