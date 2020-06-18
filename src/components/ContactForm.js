@@ -4,6 +4,9 @@ import Button from "../utils/Button";
 
 const ContactContent = styled.div`
   margin: 200px 200px 0px 200px;
+  @media (max-width: 815px) {
+    margin: 150px 10px 10px 10px;
+  }
 `;
 
 const ContactInput = styled.input`
