@@ -21,6 +21,9 @@ const LandingPageContainer = styled.main`
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 1024px) {
+    background-image: url(${mobileBackgroundImage})
+  }
   @media (max-width: 815px) {
     background-image: url(${mobileBackgroundImage});
     background-color: #beb6af;
@@ -43,6 +46,9 @@ const HeroTextContainer = styled.div`
 const Heading = styled.h1`
   margin-top: 30%;
   font-size: 6em;
+  @media (max-width: 1024px) {
+    margin-top: 70vh;
+  }
   @media (max-width: 815px) {
     margin-top: 60vh;
     font-size: 60px;

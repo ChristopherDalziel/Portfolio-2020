@@ -9,6 +9,10 @@ const ProjectContainer = styled.div`
   width: 95vw;
   margin: 10px;
   margin-bottom: 17px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin-left: 25px;
+  }
   @media (max-width: 815px) {
     flex-direction: column;
   }
@@ -19,6 +23,9 @@ const ProjectInfoDisplay = styled.div`
   overflow: scroll;
   padding-top: 10px;
   margin-left: 10px;
+  @media (max-width: 1024px) {
+    display: none;
+  }
   @media (max-width: 815px) {
     display: none;
   }
@@ -26,7 +33,7 @@ const ProjectInfoDisplay = styled.div`
 
 const ProjectNameMobile = styled.h4`
   margin: 2px;
-  @media (min-width: 815px) {
+  @media (min-width: 1025px) {
     display: none;
   }
 `;
@@ -36,7 +43,7 @@ const ProjectInfoDisplayMobile = styled.div`
   overflow: scroll;
   padding-top: 10px;
   margin-left: 10px;
-  @media (min-width: 820px) {
+  @media (min-width: 1025px) {
     display: none;
   }
 `;
@@ -54,6 +61,9 @@ const GitHubLink = styled.a`
 
 const ProjectImage = styled.img`
   width: 650px;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
   @media (max-width: 815px) {
     width: 100%;
   }

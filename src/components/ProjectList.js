@@ -8,6 +8,9 @@ const ProjectListContainer = styled.div`
   height: 86vh;
   width: 100vw;
   overflow: scroll;
+  @media (max-width: 1024px) {
+    height: 86.5vh;
+  }
   @media (max-width: 815px) {
     height: 85vh;
   }

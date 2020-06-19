@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import backgroundImage from "../../assets/Web_Final_Col.jpg";
-import mobileBackgroundImage from "../../assets/Web_Background.png";
+import mobileBackgroundImage from "../../assets/Web_Final_Col_Mob.jpg";
 import resume from "../../assets/res.pdf";
 import Button from "../../utils/Button";
 
@@ -10,6 +10,9 @@ const AboutContainer = styled.main`
   height: 100vh;
   background-image: url(${backgroundImage});
   background-size: cover;
+  @media (max-width: 1024px) {
+    background-image: url(${mobileBackgroundImage});
+  }
   @media (max-width: 815px) {
     background-image: url(${mobileBackgroundImage});
     overflow: hidden;
@@ -27,6 +30,12 @@ const AboutContent = styled.div`
   height: 80%;
   width: 30%;
   font-size: 15px;
+  @media (max-width: 1024px) {
+    padding: 100px 50px 50px 50px;
+    background: rgba(99, 69, 57, 0.6);
+    height: 100%;
+    color: white;
+  }
   @media (max-width: 815px) {
     padding: 0;
     position: absolute;
@@ -53,6 +62,9 @@ const AboutContent = styled.div`
 
 const AboutHeader = styled.h1`
   color: #493a37;
+  @media (max-width: 1024px) {
+    color: white;
+  }
 `;
 
 class AboutPage extends React.Component {

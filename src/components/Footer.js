@@ -17,6 +17,10 @@ const Footer = styled.footer`
   height: 10%;
   width: 100%;
   padding-bottom: 8px;
+  @media (max-width: 1024px) {
+    height: 5%;
+    background-color: white;
+  }
 `;
 
 const FooterLinks = styled.a`

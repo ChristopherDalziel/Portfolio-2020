@@ -8,15 +8,11 @@ const PortfolioContainer = styled.main`
   background-image: url(${backgroundImage});
   background-size: cover;
   overflow: scroll;
-  @media (max-width: 815px) {
-  }
 `;
 
 const PortfolioContent = styled.div`
   height: 50%;
   width: 80%;
-  @media (max-width: 815px) {
-  }
 `;
 
 const PortfolioPage = () => {

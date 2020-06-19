@@ -12,6 +12,10 @@ const Navigation = styled.nav`
   align-items: center;
   text-transform: uppercase;
   font-size: 14px;
+  @media (max-width: 1024px) {
+    height: 5%;
+    background-color: white;
+  }
   @media (max-width: 815px) {
     display: none;
 `;
@@ -28,6 +32,9 @@ const NavigationText = styled.p`
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
+  }
+  @media (max-width: 1200px) {
+    text-shadow: 0.5px 0.5px 0.5px #eee9e4;
   }
 `;
 
