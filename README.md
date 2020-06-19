@@ -12,13 +12,15 @@ Work in progress personal portfolio to display my work to future employers.
 
 ## About Me
 
-![Dashboard page](src/assets/readMeAssets/about-me-wire.png)
+![About Me page](src/assets/readMeAssets/about-me-wire.png)
 
 ## Contact Me
 
-![Dashboard page](src/assets/readMeAssets/contact-wire.png)
+![Contact page](src/assets/readMeAssets/contact-wire.png)
 
 ## Portfolio
+
+![Portfolio page](src/assets/readMeAssets/portfolio-wire.png)
 
 ## Admin
 
