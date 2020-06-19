@@ -26,6 +26,8 @@ Work in progress personal portfolio to display my work to future employers.
 
 ## Create
 
+![Create project page](src/assets/readMeAssets/create-wire.png)
+
 # Colour Pallette
 
 It was super important to me to keep a steady flow through the website, after selecting my home page image I wanted everything to be colorized with respect to it. The brown selection of my pallet is actually my hair colour from the background image. I knew I wanted a green and a red, staying with the pastel theme but still having some impact, I used a randomized pallet website to scroll through a bunch of different colours until I found some sets that I liked.
