@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import backgroundImage from "../../assets/Web_Final_Col.jpg";
-import mobileBackgroundImage from "../../assets/Web_Final_Col.jpg";
+import mobileBackgroundImage from "../../assets/Web_Background.png";
 import resume from "../../assets/res.pdf";
 import Button from "../../utils/Button";
 
@@ -13,6 +13,12 @@ const AboutContainer = styled.main`
   @media (max-width: 815px) {
     background-image: url(${mobileBackgroundImage});
     overflow: hidden;
+  }
+  @media (max-width: 736px) {
+    background-image: url(${mobileBackgroundImage});
+  }
+  @media (max-width: 675px) {
+    background-image: url(${mobileBackgroundImage});
   }
 `;
 
@@ -29,6 +35,19 @@ const AboutContent = styled.div`
     height: 94vh;
     width: 90vw;
     margin: 10px;
+  }
+  @media (max-width: 736px) {
+    margin-top: 6vh;
+    position: static;
+    height: 86%;
+    width: 94vw;
+    overflow: scroll;
+  }
+  @media (max-width: 675px) {
+    margin-top: 6vh;
+    position: static;
+    height: 84%;
+    overflow: scroll;
   }
 `;
 
