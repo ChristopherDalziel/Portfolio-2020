@@ -35,6 +35,11 @@ const FooterLinks = styled.a`
     -moz-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
   }
+  @media (max-width: 1024px) {
+    margin: 0;
+    margin-left: 8px;
+    font-size: 34px;
+  }
 `;
 
 const FooterComponent = () => {
