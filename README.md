@@ -17,8 +17,6 @@ My portfolio was [originally](https://github.com/ChristopherDalziel/Portfolio-2.
 - Emotion/core
 - Emotion/styled
 
-# Sitemap
-
 # Wireframes
 
 ## Dashboard
@@ -51,3 +49,7 @@ It was important to me to keep a steady flow through the website, after selectin
 - npm install
 - npm test
 - npm start
+
+# Sitemap
+
+![Create project page](src/assets/readMeAssets/sitemap.png)
