@@ -7,6 +7,9 @@ const ContactContent = styled.div`
   @media (max-width: 815px) {
     margin: 150px 10px 10px 10px;
   }
+  @media (max-width: 500px) {
+    margin: 50px;
+  }
 `;
 
 const ContactInput = styled.input`

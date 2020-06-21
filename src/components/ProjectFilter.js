@@ -5,11 +5,24 @@ import { setTextFilter } from "../actions/filters";
 
 const InputContainer = styled.div`
   margin: 10vh 0 0 10px;
-  width: 650px;
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin: 0;
+    margin-top: 7vh;
+    margin-left: 25px;
+  }
+  @media (max-width: 815px) {
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 20px;
+  }
+  @media (max-width: 600px) {
+    margin-top: 7vh;
+  }
 `;
 
 const FilterInput = styled.input`
-  width: 100%;
+  width: 650px;
   border: none;
   background: transparent;
   margin: 0 0 5px;
@@ -18,6 +31,13 @@ const FilterInput = styled.input`
   &:focus {
     outline: 0;
     border-bottom: 1px solid #ef626b;
+  }
+  @media (max-width: 1024px) {
+    width: 95vw;
+  }
+  @media (max-width: 700px) {
+    width: 90vw;
+    margin-left: 0;
   }
 `;
 
@@ -30,6 +50,7 @@ export class ProjectFilters extends React.Component {
     return (
       <InputContainer>
         <label>Search Projects:</label>
+        <br />
         <FilterInput
           autoFocus
           aria-label="Filter Input"

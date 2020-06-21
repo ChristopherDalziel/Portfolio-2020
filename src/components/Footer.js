@@ -18,8 +18,11 @@ const Footer = styled.footer`
   width: 100%;
   padding-bottom: 8px;
   @media (max-width: 1024px) {
-    height: 5%;
     background-color: white;
+    height: 4%;
+  }
+  @media (max-width: 950px) {
+    background-color: transparent;
   }
 `;
 

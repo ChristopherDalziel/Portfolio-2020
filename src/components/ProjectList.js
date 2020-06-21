@@ -6,14 +6,24 @@ import Project from "./Project";
 import selectProjects from "../selector/projects";
 
 const ProjectListContainer = styled.div`
-  height: 86vh;
+  height: 77vh;
   width: 100vw;
   overflow: scroll;
   @media (max-width: 1024px) {
-    height: 86.5vh;
+    height: 83.5vh;
   }
   @media (max-width: 815px) {
-    height: 85vh;
+    height: 84vh;
+  }
+  @media (max-width: 700px) {
+    height: 82vh;
+    overflow-x: hidden;
+  }
+  @media (max-width: 600px) {
+    height: 78vh;
+  }
+  @media (max-width: 500px) {
+    height: 74vh;
   }
 `;
 

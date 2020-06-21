@@ -11,7 +11,7 @@ const ProjectContainer = styled.div`
   margin-bottom: 17px;
   @media (max-width: 1024px) {
     flex-direction: column;
-    margin-left: 25px;
+    margin-left: 20px;
   }
   @media (max-width: 815px) {
     flex-direction: column;
@@ -46,6 +46,14 @@ const ProjectInfoDisplayMobile = styled.div`
   @media (min-width: 1025px) {
     display: none;
   }
+  @media (max-width: 815px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  @media (max-width: 700px) {
+    width: 95%;
+    margin-left: 0;
+  }
 `;
 
 const GitHubLink = styled.a`
@@ -66,6 +74,9 @@ const ProjectImage = styled.img`
   }
   @media (max-width: 815px) {
     width: 100%;
+  }
+  @media (max-width: 700px) {
+    width: 95%;
   }
 `;
 

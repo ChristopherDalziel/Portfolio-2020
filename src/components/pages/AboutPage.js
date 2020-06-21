@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import backgroundImage from "../../assets/Web_Final_Col.jpg";
-import mobileBackgroundImage from "../../assets/Web_Final_Col_Mob.jpg";
+import mobileBackgroundImage from "../../assets/Web_Background.png";
+import mobileSelfImageBackground from "../../assets/Web_Final_Col_Mob.jpg";
 import resume from "../../assets/res.pdf";
 import Button from "../../utils/Button";
 
@@ -11,7 +12,7 @@ const AboutContainer = styled.main`
   background-image: url(${backgroundImage});
   background-size: cover;
   @media (max-width: 1024px) {
-    background-image: url(${mobileBackgroundImage});
+    background-image: url(${mobileSelfImageBackground});
   }
   @media (max-width: 815px) {
     background-image: url(${mobileBackgroundImage});
@@ -37,12 +38,14 @@ const AboutContent = styled.div`
     color: white;
   }
   @media (max-width: 815px) {
+    background: none;
+    color: #493737;
     padding: 0;
     position: absolute;
     bottom: 0;
     overflow: hidden;
     height: 94vh;
-    width: 90vw;
+    width: 97%;
     margin: 10px;
   }
   @media (max-width: 736px) {
@@ -58,12 +61,18 @@ const AboutContent = styled.div`
     height: 84%;
     overflow: scroll;
   }
+  @media (max-width: 600px) {
+    margin-top: 7vh;
+  }
 `;
 
 const AboutHeader = styled.h1`
   color: #493a37;
   @media (max-width: 1024px) {
     color: white;
+  }
+  @media (max-width: 815px) {
+    color: #493737;
   }
 `;
 
