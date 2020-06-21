@@ -17,27 +17,32 @@ My portfolio was [originally](https://github.com/ChristopherDalziel/Portfolio-2.
 - Emotion/core
 - Emotion/styled
 
-# Wireframes
+# Wireframes and Screenshots
 
 ## Dashboard
 
-![Dashboard page](src/assets/readMeAssets/dashboard-wire.png)
+![Dashboard page wireframe](src/assets/readMeAssets/dashboard-wire.png)
+![Dashboard page screenshot](src/assets/readMeAssets/dashboard-screen.png)
 
 ## About Me
 
-![About Me page](src/assets/readMeAssets/about-me-wire.png)
-
-## Contact Me
-
-![Contact page](src/assets/readMeAssets/contact-wire.png)
+![About Me page wireframe](src/assets/readMeAssets/about-me-wire.png)
+![About Me page screenshot](src/assets/readMeAssets/about-screen.png)
 
 ## Portfolio
 
-![Portfolio page](src/assets/readMeAssets/portfolio-wire.png)
+![Portfolio page wireframe](src/assets/readMeAssets/portfolio-wire.png)
+![Portfolio page screenshot](src/assets/readMeAssets/portfolio-screen.png)
 
 ## Create
 
-![Create project page](src/assets/readMeAssets/create-wire.png)
+![Create project page wireframe](src/assets/readMeAssets/create-wire.png)
+![Create project page screenshot](src/assets/readMeAssets/create-screen.png)
+
+## Contact Me
+
+![Contact page wireframe](src/assets/readMeAssets/contact-wire.png)
+![Contact page screenshot](src/assets/readMeAssets/contact-screen.png)
 
 # Colour Pallette
 
