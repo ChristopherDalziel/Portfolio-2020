@@ -69,6 +69,7 @@ const GitHubLink = styled.a`
 
 const ProjectImage = styled.img`
   width: 650px;
+  object-fit: cover;
   @media (max-width: 1024px) {
     width: 100%;
   }
