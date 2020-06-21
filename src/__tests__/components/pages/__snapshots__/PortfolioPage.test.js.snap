@@ -3,6 +3,7 @@
 exports[`Should render the Portfolio Page correctly 1`] = `
 <Styled(main)>
   <Styled(div)>
+    <Connect(ProjectFilters) />
     <Connect(ProjectList) />
   </Styled(div)>
 </Styled(main)>
