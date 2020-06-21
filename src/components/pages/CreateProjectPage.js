@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { connect } from "react-redux";
+import backgroundImage from "../../assets/Web_Background.png";
 import ProjectForm from "../ProjectForm";
 import { startCreateProject } from "../../actions/projects";
 
 const ProjectPageContainer = styled.main`
+  background-image: url(${backgroundImage});
   height: 100vh;
   display: flex;
   justify-content: center;
