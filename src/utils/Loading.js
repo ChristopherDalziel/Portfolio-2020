@@ -27,7 +27,6 @@ const ApplicationLoading = () => {
   return (
     <ApplicationLoadingContainer>
       <PleaseWait>Please wait..</PleaseWait>
-      <br />
       <Loading />
     </ApplicationLoadingContainer>
   );
