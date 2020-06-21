@@ -19,11 +19,16 @@ const Loading = styled.div`
   background-size: 75px 75px;
 `;
 
+const PleaseWait = styled.p`
+  width: 100px;
+`;
+
 const ApplicationLoading = () => {
   return (
     <ApplicationLoadingContainer>
+      <PleaseWait>Please wait..</PleaseWait>
+      <br />
       <Loading />
-      <p>Please wait..</p>
     </ApplicationLoadingContainer>
   );
 };
