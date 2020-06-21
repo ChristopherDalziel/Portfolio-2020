@@ -18,10 +18,6 @@ const state = store.getState();
 
 const visibleProjects = getVisibleProjects(state.projects, state.filters);
 
-console.log(state.projects);
-
-console.log(visibleProjects);
-
 store.dispatch(startSetProjects());
 
 const wrappedApplication = (
