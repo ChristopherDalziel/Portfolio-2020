@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import ProjectList from "../ProjectList";
+import ProjectFilter from "../ProjectFilter";
 import backgroundImage from "../../assets/Web_Background.png";
 
 const PortfolioContainer = styled.main`
@@ -19,6 +20,7 @@ const PortfolioPage = () => {
   return (
     <PortfolioContainer>
       <PortfolioContent>
+        <ProjectFilter />
         <ProjectList />
       </PortfolioContent>
     </PortfolioContainer>

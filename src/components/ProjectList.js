@@ -3,8 +3,9 @@ import { connect } from "react-redux";
 import styled from "@emotion/styled";
 import Project from "./Project";
 
+import selectProjects from "../selector/projects";
+
 const ProjectListContainer = styled.div`
-  margin-top: 6vh;
   height: 86vh;
   width: 100vw;
   overflow: scroll;
@@ -30,7 +31,8 @@ export const ProjectList = (props) => (
 
 const mapStateToProps = (state) => {
   return {
-    projects: state.projects.reverse(),
+    // projects: state.projects.reverse(),
+    projects: selectProjects(state.projects.reverse(), state.filters),
   };
 };
 
