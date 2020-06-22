@@ -96,7 +96,8 @@ class AboutPage extends React.Component {
             <br />
             <br />
             I am now refocusing my career goals to combine what I learnt from
-            and loved about my previous position with my passion for technology.
+            and loved about my previous positions with my passion for
+            technology.
             <br />
             <br />
             3 months ago I completed my Diploma of Information of Technology
@@ -121,12 +122,8 @@ class AboutPage extends React.Component {
             <br />
             <br />
             Since then I’ve been focused on continuing my own development and
-            continuing to improve every single day while I look for new
-            opportunities to follow in my developer journey.
-            <br />
-            <br />
-            I believe in working hard, every single day, through every single
-            task – no goal is impossible.
+            learning improve every single day while I look for new opportunities
+            to follow in my developer journey.
             <br />
             <br />
             I can’t wait to begin my new career and I’d love to hear from you.
