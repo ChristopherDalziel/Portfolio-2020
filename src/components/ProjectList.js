@@ -27,10 +27,16 @@ const ProjectListContainer = styled.div`
   }
 `;
 
+const NoProjectsDisplay = styled.p`
+  margin: 20px;
+`;
+
 export const ProjectList = (props) => (
   <ProjectListContainer>
     {props.projects.length === 0 ? (
-      <p>No project(s) to display right now</p>
+      <NoProjectsDisplay>
+        Sorry there's no project(s) to display
+      </NoProjectsDisplay>
     ) : (
       props.projects.map((project) => {
         return <Project key={project.id} {...project} />;
