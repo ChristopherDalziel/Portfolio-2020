@@ -19,7 +19,6 @@ const BurgerIconHover = styled.button`
   display: flex;
   flex-direction: flex-start;
   background-color: transparent;
-  width: 80vw;
   height: 6.5vh;
   z-index: 5;
   margin: 10px 0 0 10px;
