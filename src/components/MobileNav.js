@@ -6,8 +6,9 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const BurgerMenu = styled.nav`
   background-color: #beb6af;
-  width: 100px;
-  padding: 5px;
+  padding-top: 5vh;
+  width: 98vw;
+  height: 76vh;
   position: absolute;
   z-index: 1;
   -webkit-user-select: none;
@@ -23,9 +24,11 @@ const BurgerIconHover = styled.div`
 `;
 
 const BurgerText = styled.p`
-  font-size: 12px;
+  font-size: 16px;
+
   color: #483736;
   text-transform: uppercase;
+  text-align: center;
   transition: color 0.3s ease;
 `;
 
@@ -41,16 +44,22 @@ const MobileNav = () => {
       {menuDisplayed ? (
         <BurgerMenu>
           <BurgerText>
-            <NavLink to="/">Home page</NavLink>
+            <NavLink onClick={() => setMenuDisplayed(false)} to="/">
+              Home page.
+            </NavLink>
           </BurgerText>
           <br />
           <BurgerText>
-            <NavLink to="/about">About Me</NavLink>
+            <NavLink onClick={() => setMenuDisplayed(false)} to="/about">
+              About Me.
+            </NavLink>
           </BurgerText>
           <br />
 
           <BurgerText>
-            <NavLink to="/portfolio">Portfolio</NavLink>
+            <NavLink onClick={() => setMenuDisplayed(false)} to="/portfolio">
+              Portfolio.
+            </NavLink>
           </BurgerText>
           <br />
 
@@ -60,7 +69,9 @@ const MobileNav = () => {
           <br /> */}
 
           <BurgerText>
-            <NavLink to="/contact">Contact Me</NavLink>
+            <NavLink onClick={() => setMenuDisplayed(false)} to="/contact">
+              Contact Me.
+            </NavLink>
           </BurgerText>
         </BurgerMenu>
       ) : null}

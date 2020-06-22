@@ -9,6 +9,9 @@ const PortfolioContainer = styled.main`
   background-image: url(${backgroundImage});
   background-size: cover;
   overflow: scroll;
+  @media (max-width: 815px) {
+    height: 79.5vh;
+  }
 `;
 
 const PortfolioContent = styled.div`

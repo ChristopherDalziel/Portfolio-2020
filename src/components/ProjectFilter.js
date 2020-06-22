@@ -52,7 +52,6 @@ export class ProjectFilters extends React.Component {
         <label>Search Projects:</label>
         <br />
         <FilterInput
-          autoFocus
           aria-label="Filter Input"
           type="text"
           placeholder="By name or technology used"

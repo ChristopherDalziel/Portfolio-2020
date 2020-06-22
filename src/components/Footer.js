@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import footerBackground from "../assets/Web_Background.png";
 
 import {
   faTwitterSquare,
@@ -22,7 +23,8 @@ const Footer = styled.footer`
     height: 4%;
   }
   @media (max-width: 950px) {
-    background-color: transparent;
+    background-image: url(${footerBackground});
+    height: 6vh;
   }
 `;
 

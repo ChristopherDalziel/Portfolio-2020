@@ -15,6 +15,7 @@ const AboutContainer = styled.main`
     background-image: url(${mobileSelfImageBackground});
   }
   @media (max-width: 815px) {
+    height: 84vh;
     background-image: url(${mobileBackgroundImage});
     overflow: hidden;
   }
