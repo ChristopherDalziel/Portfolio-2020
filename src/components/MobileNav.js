@@ -7,8 +7,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const BurgerMenu = styled.nav`
   background-color: #beb6af;
   padding-top: 5vh;
-  width: 98vw;
-  height: 76vh;
+  width: 96vw;
+  height: 74vh;
   position: absolute;
   z-index: 1;
   -webkit-user-select: none;
@@ -16,16 +16,15 @@ const BurgerMenu = styled.nav`
 `;
 
 const BurgerIconHover = styled.div`
-  margin: 0 0 0 5px;
+  margin: 0 0 0 10px;
   position: absolute;
-  font-size: 30px;
+  font-size: 40px;
   @media (min-width: 820px) {
     display: none;
 `;
 
 const BurgerText = styled.p`
   font-size: 16px;
-
   color: #483736;
   text-transform: uppercase;
   text-align: center;
