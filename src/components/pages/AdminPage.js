@@ -9,6 +9,7 @@ import Button from "../../utils/Button";
 const LoginContainer = styled.main`
   background-image: url(${backgroundImage});
   background-size: cover;
+  padding: 0 25% 0 25%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,9 +22,6 @@ export const AdminPage = ({ isAuthenticated, startLogin, startLogout }) => {
       {isAuthenticated ? (
         <>
           <Button handleClick={startLogout}>Logout</Button>
-          <br />
-          ||
-          <br />
           <Button
             handleClick={() => {
               history.push("/createproject");
