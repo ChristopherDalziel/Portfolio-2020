@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "@emotion/styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +16,9 @@ const BurgerMenu = styled.nav`
 `;
 
 const BurgerIconHover = styled.button`
+  display: flex;
+  flex-direction: flex-start;
+  background-color: transparent;
   width: 80vw;
   height: 6.5vh;
   z-index: 5;
