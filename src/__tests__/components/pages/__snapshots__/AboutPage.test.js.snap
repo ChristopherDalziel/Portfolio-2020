@@ -8,6 +8,9 @@ exports[`Should render the About Page correctly 1`] = `
       <br />
        my names Chris.
     </Styled(h1)>
+    <Styled(h4)>
+      junior developer.
+    </Styled(h4)>
     <br />
     <p>
       I’m a highly motivated and passionate individual looking for my next opportunity. Over the past 6 years I’ve had the privilege of leading, and working within a wide array of teams across multiple businesses gaining experience in many collaborative environments and situations.

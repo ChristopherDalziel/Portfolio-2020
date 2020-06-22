@@ -78,6 +78,16 @@ const AboutHeader = styled.h1`
   }
 `;
 
+const SubHeading = styled.h4`
+  color: #493a37;
+  @media (max-width: 1024px) {
+    color: white;
+  }
+  @media (max-width: 815px) {
+    color: #493737;
+  }
+`;
+
 class AboutPage extends React.Component {
   render() {
     return (
@@ -86,6 +96,7 @@ class AboutPage extends React.Component {
           <AboutHeader>
             Hello. <br /> my names Chris.
           </AboutHeader>
+          <SubHeading>junior developer.</SubHeading>
           <br />
           <p>
             I’m a highly motivated and passionate individual looking for my next
