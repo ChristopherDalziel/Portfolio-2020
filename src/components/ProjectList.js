@@ -35,7 +35,7 @@ export const ProjectList = (props) => (
   <ProjectListContainer>
     {props.projects.length === 0 ? (
       <NoProjectsDisplay>
-        Sorry there's no project(s) to display
+        Sorry there's no project(s) to display.
       </NoProjectsDisplay>
     ) : (
       props.projects.map((project) => {

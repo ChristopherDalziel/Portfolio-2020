@@ -35,7 +35,7 @@ exports[`Should render list with projects 1`] = `
 exports[`Should render project list with empty message 1`] = `
 <Styled(div)>
   <Styled(p)>
-    Sorry there's no project(s) to display
+    Sorry there's no project(s) to display.
   </Styled(p)>
 </Styled(div)>
 `;
