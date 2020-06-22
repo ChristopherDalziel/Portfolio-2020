@@ -10,13 +10,27 @@ exports[`Should render the About Page correctly 1`] = `
     </Styled(h1)>
     <br />
     <p>
-      Over the past 6 years I’ve had the privilege of working as a store manager across 2 businesses gaining experience in many different collaborative environments and situations. 5 months ago, I stepped down from my position to chase a new passion with the hope of finding a new career path. I believe the key to success is really giving it your all in every opportunity you have through every single task, every single day, through hard work anything can be achieved.
+      I’m a highly motivated and passionate individual looking for my next opportunity. Over the past 6 years I’ve had the privilege of leading, and working within a wide array of teams across multiple businesses gaining experience in many collaborative environments and situations.
       <br />
       <br />
-      Since stepping down I've been working towards a new career path of becoming a web developer and for the past 5 months I've been a fast-track student at Coder Academy Melbourne where I'm honing my skills and knowelege so in a few months I will be ready to join the workforce as a junior developer.
+      I am now refocusing my career goals to combine what I learnt from and loved about my previous position with my passion for technology.
       <br />
       <br />
-      Through my expierences of life, work and study I've found my passion for technology, problem solving, collaboration and teamwork. I'm hoping through this new career path I can continue to persue these passions and work towards a career that can be more impactful.
+      3 months ago I completed my Diploma of Information of Technology with Coder Academy Melbourne, A fully accredited 6-month full time, full stack web development course focused on fast paced learning via projects. During my time at Coder Academy I learned many different web technologies beginning with my first project which was a Ruby terminal app that explored object orientated design patterns, followed by a Ruby on Rails marketplace that introduced me to the MVC architecture, before finishing the course with a group project based on the MERN stack for a real world client. This final project would be a combination of everything we had learnt so far as well as the first time we would collaborate with other developers on a single project – for me, this was by far the most challenging and rewarding of all the assessments at Coder Academy. 
+      <br />
+      My experience at Coder Academy wasn’t just about learning programming languages, it was about preparing for the industry. We also touched on cloud development tools, problem solving, user experience design and accessibility, discrete maths, version control and how to work in a professional development team using an Agile workflow.
+      <br />
+      <br />
+      Since then I’ve been focused on continuing my own development and continuing to improve every single day while I look for new opportunities to follow in my developer journey.
+      <br />
+      <br />
+      I believe in working hard, every single day, through every single task – no goal is impossible.
+      <br />
+      <br />
+      I can’t wait to begin my new career and I’d love to hear from you.
+      <br />
+      <br />
+      If you’d like to check out my resume please feel free to download from the link provided below.
       <br />
       <br />
       <br />
