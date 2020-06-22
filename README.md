@@ -2,7 +2,7 @@
 
 I've built this website as a resume, a portfolio of my previous, current and future work. Intended to showcase my work to potential future employers in an environment I purposefully built to display it.
 
-My portfolio was [originally](https://github.com/ChristopherDalziel/Portfolio-2.0) written using static HTML/CSS before I new about the wonders of dynamic websites, React and backends. Rebuilding it has helped me upskill myself further using React, styled css components, Enzyme tests and Firebase.
+My portfolio was [originally](https://github.com/ChristopherDalziel/Portfolio-2019) written using static HTML/CSS before I new about the wonders of dynamic websites, React and backends. Rebuilding it has helped me upskill myself further using React, styled css components, Enzyme tests and Firebase.
 
 # Tech
 
