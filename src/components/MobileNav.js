@@ -16,6 +16,9 @@ const BurgerMenu = styled.nav`
 `;
 
 const BurgerIconHover = styled.div`
+  width: 96vw;
+  height: 6.5vh;
+  z-index: 5;
   margin: 0 0 0 10px;
   position: absolute;
   font-size: 40px;
