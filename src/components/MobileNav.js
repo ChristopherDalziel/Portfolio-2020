@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "@emotion/styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,13 +10,13 @@ const BurgerMenu = styled.nav`
   width: 96vw;
   height: 74vh;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   -webkit-user-select: none;
   user-select: none;
 `;
 
-const BurgerIconHover = styled.div`
-  width: 96vw;
+const BurgerIconHover = styled.button`
+  width: 80vw;
   height: 6.5vh;
   z-index: 5;
   margin: 0 0 0 10px;
@@ -38,11 +38,8 @@ const MobileNav = () => {
   const [menuDisplayed, setMenuDisplayed] = useState(false);
 
   return (
-    <BurgerIconHover
-      onMouseEnter={() => setMenuDisplayed(true)}
-      onMouseLeave={() => setMenuDisplayed(false)}
-    >
-      <FontAwesomeIcon icon={faBars} />
+    <BurgerIconHover>
+      <FontAwesomeIcon onClick={() => setMenuDisplayed(true)} icon={faBars} />
       {menuDisplayed ? (
         <BurgerMenu>
           <BurgerText>
