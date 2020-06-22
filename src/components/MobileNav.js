@@ -22,8 +22,9 @@ const BurgerIconHover = styled.button`
   width: 80vw;
   height: 6.5vh;
   z-index: 5;
-  margin: 0 0 0 10px;
+  margin: 10px 0 0 10px;
   position: absolute;
+  color: #4A3B38;
   font-size: 40px;
   @media (min-width: 820px) {
     display: none;
