@@ -10,7 +10,7 @@ import LandingPage from "../components/pages/LandingPage";
 import AboutPage from "../components/pages/AboutPage";
 import PortfolioPage from "../components/pages/PortfolioPage";
 import ContactPage from "../components/pages/ContactPage";
-import CodepenPage from "../components/pages/CodepenPage";
+// import CodepenPage from "../components/pages/CodepenPage";
 import NotFoundPage from "../components/pages/NotFoundPage";
 import AdminPage from "../components/pages/AdminPage";
 import CreateProjectPage from "../components/pages/CreateProjectPage";
