@@ -28,9 +28,9 @@ const FilterInput = styled.input`
   margin: 0 0 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  border-bottom: 1px solid #ef626b;
   &:focus {
     outline: 0;
-    border-bottom: 1px solid #ef626b;
   }
   @media (max-width: 1024px) {
     width: 95vw;
