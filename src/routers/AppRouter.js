@@ -29,7 +29,7 @@ const AppRouter = () => {
         <Route path="/about" component={AboutPage} />
         <Route path="/portfolio" component={PortfolioPage} />
         <Route path="/contact" component={ContactPage} />
-        <Route path="/codepen" component={CodepenPage} />
+        {/* <Route path="/codepen" component={CodepenPage} /> */}
         <Route path="/admin" component={AdminPage} />
         <PrivateRoute path="/createProject" component={CreateProjectPage} />
         <Route component={NotFoundPage} />
