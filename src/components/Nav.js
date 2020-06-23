@@ -33,7 +33,7 @@ const NavigationText = styled.p`
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     text-shadow: 0.5px 0.5px 0.5px #eee9e4;
   }
 `;
