@@ -15,7 +15,6 @@ const AboutContainer = styled.main`
     background-image: url(${mobileSelfImageBackground});
   }
   @media (max-width: 815px) {
-    height: 84vh;
     background-image: url(${mobileBackgroundImage});
     overflow: hidden;
   }
@@ -88,6 +87,11 @@ const SubHeading = styled.h4`
   }
 `;
 
+const AboutText = styled.p`
+  height: 100%;
+  overflow: scroll;
+`;
+
 class AboutPage extends React.Component {
   render() {
     return (
@@ -98,7 +102,7 @@ class AboutPage extends React.Component {
           </AboutHeader>
           <SubHeading>junior developer.</SubHeading>
           <br />
-          <p>
+          <AboutText>
             I’m a highly motivated and passionate individual looking for my next
             opportunity. Over the past 6 years I’ve had the privilege of
             leading, and working within a wide array of teams across multiple
@@ -155,7 +159,7 @@ class AboutPage extends React.Component {
                 DOWNLOAD MY RESUME
               </Link>
             </Button>
-          </p>
+          </AboutText>
         </AboutContent>
       </AboutContainer>
     );
