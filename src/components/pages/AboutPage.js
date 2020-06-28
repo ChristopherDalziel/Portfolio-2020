@@ -11,13 +11,13 @@ const AboutContainer = styled.main`
   height: 100vh;
   background-image: url(${backgroundImage});
   background-size: cover;
-  overflow: hidden;
   @media (max-width: 1024px) {
     background-image: url(${mobileSelfImageBackground});
   }
   @media (max-width: 815px) {
+    height: 84vh;
     background-image: url(${mobileBackgroundImage});
-    overflow: hidden;
+    overflow: auto;
   }
   @media (max-width: 736px) {
     background-image: url(${mobileBackgroundImage});
@@ -32,7 +32,7 @@ const AboutContent = styled.div`
   height: 80%;
   width: 35%;
   font-size: 15px;
-  overflow: hidden;
+  overflow: scroll;
   @media (max-width: 1024px) {
     padding: 90px 50px 50px 50px;
     background: rgba(99, 69, 57, 0.6);
@@ -72,7 +72,6 @@ const AboutHeader = styled.h1`
   color: #493a37;
   @media (max-width: 1024px) {
     color: white;
-    overflow: hidden;
   }
   @media (max-width: 815px) {
     color: #493737;
@@ -83,16 +82,10 @@ const SubHeading = styled.h4`
   color: #493a37;
   @media (max-width: 1024px) {
     color: white;
-    overflow: hidden;
   }
   @media (max-width: 815px) {
     color: #493737;
   }
-`;
-
-const AboutText = styled.p`
-  height: 100%;
-  overflow: scroll;
 `;
 
 class AboutPage extends React.Component {
@@ -105,7 +98,7 @@ class AboutPage extends React.Component {
           </AboutHeader>
           <SubHeading>junior developer.</SubHeading>
           <br />
-          <AboutText>
+          <p>
             I’m a highly motivated and passionate individual looking for my next
             opportunity. Over the past 6 years I’ve had the privilege of
             leading, and working within a wide array of teams across multiple
@@ -162,7 +155,7 @@ class AboutPage extends React.Component {
                 DOWNLOAD MY RESUME
               </Link>
             </Button>
-          </AboutText>
+          </p>
         </AboutContent>
       </AboutContainer>
     );
