@@ -34,7 +34,7 @@ const FooterLinks = styled.a`
   align-items: flex-end;
   margin: 5px;
   color: #493a37;
-  font-size: 50px;
+  font-size: 40px;
   &:hover {
     color: #a8b7ab;
     -webkit-transition: color 0.3s ease-in-out;
