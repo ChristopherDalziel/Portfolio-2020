@@ -3,9 +3,10 @@ import styled from "@emotion/styled";
 import footerBackground from "../assets/Web_Background.png";
 
 import {
-  faTwitterSquare,
-  faLinkedin,
-  faGithubSquare,
+  faTwitter,
+  faLinkedinIn,
+  faGithub,
+  faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -51,16 +52,22 @@ const FooterComponent = () => {
   return (
     <Footer>
       <FooterLinks target="_blank" href="https://twitter.com/dalziel_chris">
-        <FontAwesomeIcon icon={faTwitterSquare} />
+        <FontAwesomeIcon icon={faTwitter} />
       </FooterLinks>
       <FooterLinks
         target="_blank"
         href="https://www.linkedin.com/in/christopher-dalziel-129427187/"
       >
-        <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon icon={faLinkedinIn} />
       </FooterLinks>
       <FooterLinks target="_blank" href="https://github.com/ChristopherDalziel">
-        <FontAwesomeIcon icon={faGithubSquare} />
+        <FontAwesomeIcon icon={faGithub} />
+      </FooterLinks>
+      <FooterLinks
+        target="_blank"
+        href="https://codepen.io/christopherdalziel/pens/public"
+      >
+        <FontAwesomeIcon icon={faCodepen} />
       </FooterLinks>
     </Footer>
   );

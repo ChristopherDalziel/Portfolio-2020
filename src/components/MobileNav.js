@@ -65,11 +65,6 @@ const MobileNav = () => {
           </BurgerText>
           <br />
 
-          {/* <BurgerText>
-            <NavLink to="/codepen">Codepens</NavLink>
-          </BurgerText>
-          <br /> */}
-
           <BurgerText>
             <NavLink onClick={() => setMenuDisplayed(false)} to="/contact">
               Contact Me.
