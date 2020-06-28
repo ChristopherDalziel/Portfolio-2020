@@ -11,6 +11,7 @@ const AboutContainer = styled.main`
   height: 100vh;
   background-image: url(${backgroundImage});
   background-size: cover;
+  overflow: hidden;
   @media (max-width: 1024px) {
     background-image: url(${mobileSelfImageBackground});
   }
@@ -31,7 +32,7 @@ const AboutContent = styled.div`
   height: 80%;
   width: 35%;
   font-size: 15px;
-  overflow: scroll;
+  overflow: hidden;
   @media (max-width: 1024px) {
     padding: 90px 50px 50px 50px;
     background: rgba(99, 69, 57, 0.6);
@@ -71,6 +72,7 @@ const AboutHeader = styled.h1`
   color: #493a37;
   @media (max-width: 1024px) {
     color: white;
+    overflow: hidden;
   }
   @media (max-width: 815px) {
     color: #493737;
@@ -81,6 +83,7 @@ const SubHeading = styled.h4`
   color: #493a37;
   @media (max-width: 1024px) {
     color: white;
+    overflow: hidden;
   }
   @media (max-width: 815px) {
     color: #493737;
