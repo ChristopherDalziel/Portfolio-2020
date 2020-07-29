@@ -35,6 +35,7 @@ const FooterLinks = styled.a`
   margin: 5px;
   color: #493a37;
   font-size: 40px;
+  margin-left: 8px;
   &:hover {
     color: #a8b7ab;
     -webkit-transition: color 0.3s ease-in-out;
