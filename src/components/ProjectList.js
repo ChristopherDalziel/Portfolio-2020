@@ -6,7 +6,7 @@ import Project from "./Project";
 import selectProjects from "../selector/projects";
 
 const ProjectListContainer = styled.div`
-  height: 77vh;
+  height: 75vh;
   width: 100vw;
   overflow: scroll;
   @media (max-width: 1024px) {

@@ -20,7 +20,6 @@ const ProjectContainer = styled.div`
 
 const ProjectInfoDisplay = styled.div`
   height: 100%;
-  overflow: scroll;
   padding-top: 10px;
   margin-left: 10px;
   @media (max-width: 1024px) {
