@@ -66,7 +66,7 @@ class ContactForm extends React.Component {
           <ContactInput
             autoFocus
             required
-            placeholder="Your name"
+            placeholder="Your Name"
             type="name"
             name="name"
           />
@@ -79,14 +79,14 @@ class ContactForm extends React.Component {
           />
           <label>Phone number:</label>
           <ContactInput
-            placeholder="Your Phone Number (optional)"
+            placeholder="Your Phone Number (Optional)"
             type="number"
             name="number"
           />
           <label>Message:</label>
           <ContactTextArea
             required
-            placeholder="Type your message here...."
+            placeholder="Type Your Message Here..."
             type="text"
             name="message"
           />
