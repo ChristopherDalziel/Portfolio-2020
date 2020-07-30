@@ -96,7 +96,7 @@ class ContactForm extends React.Component {
             <Button>Submit</Button>
           )}
           {status === "ERROR" && (
-            <p>An error has occured, your email has not been submitted.</p>
+            <p>An error has occurred, your email has not been submitted.</p>
           )}
         </form>
       </ContactContent>
