@@ -31,7 +31,7 @@ const AboutContent = styled.div`
   padding: 100px 0 0 50px;
   height: 80%;
   width: 35%;
-  padding-right: 61%;
+  padding-right: 61.5%;
   font-size: 15px;
   overflow-y: scroll;
   overflow-x: hidden;
