@@ -31,8 +31,10 @@ const AboutContent = styled.div`
   padding: 100px 0 0 50px;
   height: 80%;
   width: 35%;
+  padding-right: 61%;
   font-size: 15px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   @media (max-width: 1024px) {
     padding: 90px 50px 50px 50px;
     background: rgba(99, 69, 57, 0.6);
