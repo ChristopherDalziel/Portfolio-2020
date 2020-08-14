@@ -16,6 +16,9 @@ const StyledButton = styled.button`
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Button = ({ type = "button", handleClick, children }) => {
