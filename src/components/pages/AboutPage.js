@@ -142,8 +142,7 @@ class AboutPage extends React.Component {
             I can’t wait to begin my new career and I’d love to hear from you.
             <br />
             <br />
-            If you’d like to check out my resume please feel free to download
-            from the link provided below.
+            Check out my resume by downloading it from the link below.
             <br />
             <br />
             <br />
