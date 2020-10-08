@@ -106,7 +106,7 @@ class AboutPage extends React.Component {
             personal projects as I looked for work. This isn't my focus now but
             I've decided that I will continue to host the site and display my
             previous and future projects as I continue to grow as a developer.
-            (Who know's maybe I'll try my hand at blogging too.)
+            (Who knows maybe I'll try my hand at blogging too)
             <br /> <br />
             If you have any questions, or are a fellow student or junior
             developer that I could help out please don't hesitate to get in
