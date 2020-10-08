@@ -98,10 +98,22 @@ class AboutPage extends React.Component {
           <AboutHeader>
             Hello. <br /> my names Chris.
           </AboutHeader>
-          <SubHeading>junior developer.</SubHeading>
+          {/* <SubHeading>junior developer.</SubHeading> */}
           <br />
           <p>
-            I’m a highly motivated and passionate individual looking for my next
+            I'm a junior developer from Melbourne, Australia working for Lexicon
+            Digital. Previously this site was used as a portfolio for all of my
+            personal projects as I looked for work. This isn't my focus now but
+            I've decided that I will continue to host the site and display my
+            previous and future projects as I continue to grow as a developer.
+            (Who know's maybe I'll try my hand at blogging too.)
+            <br /> <br />
+            If you have any questions, or are a fellow student or junior
+            developer that I could help out please don't hesitate to get in
+            contact with me via email or on my socials. <br /> <br />
+            Previously I've worked mostly with ReactJS, right now I am focused
+            on learning Kotlin.
+            {/* I’m a highly motivated and passionate individual looking for my next
             opportunity. Over the past 6 years I’ve had the privilege of
             leading, and working within a wide array of teams across multiple
             businesses gaining experience in many collaborative environments and
@@ -155,7 +167,7 @@ class AboutPage extends React.Component {
               >
                 DOWNLOAD MY RESUME
               </Link>
-            </Button>
+            </Button> */}
           </p>
         </AboutContent>
       </AboutContainer>
