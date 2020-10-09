@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import backgroundImage from "../../assets/Web_Final_Col.jpg";
 import mobileBackgroundImage from "../../assets/Web_Background.png";
 import mobileSelfImageBackground from "../../assets/Web_Final_Col_Mob.jpg";
-import resume from "../../assets/res.pdf";
-import Button from "../../utils/Button";
+// import resume from "../../assets/res.pdf";
+// import Button from "../../utils/Button";
 
 const AboutContainer = styled.main`
   height: 100vh;
@@ -80,15 +80,15 @@ const AboutHeader = styled.h1`
   }
 `;
 
-const SubHeading = styled.h4`
-  color: #493a37;
-  @media (max-width: 1024px) {
-    color: white;
-  }
-  @media (max-width: 815px) {
-    color: #493737;
-  }
-`;
+// const SubHeading = styled.h4`
+//   color: #493a37;
+//   @media (max-width: 1024px) {
+//     color: white;
+//   }
+//   @media (max-width: 815px) {
+//     color: #493737;
+//   }
+// `;
 
 class AboutPage extends React.Component {
   render() {
