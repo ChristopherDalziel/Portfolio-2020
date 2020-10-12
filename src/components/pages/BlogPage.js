@@ -8,7 +8,6 @@ const BlogPageContainer = styled.main`
   background-image: url(${backgroundImage});
   width: 100vw;
   height: 100vh;
-
   overflow: scroll;
 `;
 
@@ -33,9 +32,9 @@ class BlogPage extends Component {
 
   render() {
     return (
-      <BlogPageContainer className="blog">
-        <div className="anchor" id="blog" />
-        <h1 className="sectionTitle">Articles</h1>
+      <BlogPageContainer>
+        <div />
+        <h1>Blog</h1>
         {this.state.posts.map((post) => (
           <ArticlePreview post={post} />
         ))}

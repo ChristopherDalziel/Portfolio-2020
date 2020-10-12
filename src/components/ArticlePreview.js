@@ -26,7 +26,6 @@ class ArticlePreview extends Component {
           <a href={"/blog/" + this.props.post.ID} className="blackLink">
             {this.props.post.featured_image ? (
               <PreviewImage
-                className="img-responsive webpic"
                 alt="article header"
                 src={this.props.post.featured_image}
               />

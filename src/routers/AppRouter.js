@@ -31,6 +31,7 @@ const AppRouter = () => {
         <Route path="/contact" component={ContactPage} />
         <Route path="/admin" component={AdminPage} />
         <Route path="/blog" component={BlogPage} />
+
         <PrivateRoute path="/createProject" component={CreateProjectPage} />
         <Route component={NotFoundPage} />
       </Switch>
