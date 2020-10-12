@@ -13,6 +13,7 @@ import ContactPage from "../components/pages/ContactPage";
 import NotFoundPage from "../components/pages/NotFoundPage";
 import AdminPage from "../components/pages/AdminPage";
 import CreateProjectPage from "../components/pages/CreateProjectPage";
+import BlogPage from "../components/pages/BlogPage";
 
 import PrivateRoute from "./PrivateRoute";
 
@@ -29,6 +30,7 @@ const AppRouter = () => {
         <Route path="/portfolio" component={PortfolioPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/admin" component={AdminPage} />
+        <Route path="/blog" component={BlogPage} />
         <PrivateRoute path="/createProject" component={CreateProjectPage} />
         <Route component={NotFoundPage} />
       </Switch>
