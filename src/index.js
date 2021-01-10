@@ -10,13 +10,13 @@ import { startSetProjects } from "./actions/projects";
 import { login, logout } from "./actions/auth";
 import { firebase } from "./firebase/firebase";
 import ApplicationLoading from "./utils/Loading";
-import getVisibleProjects from "./selector/projects";
+// import getVisibleProjects from "./selector/projects";
 
 const store = configureStore();
 
-const state = store.getState();
+// const state = store.getState();
 
-const visibleProjects = getVisibleProjects(state.projects, state.filters);
+// const visibleProjects = getVisibleProjects(state.projects, state.filters);
 
 store.dispatch(startSetProjects());
 
